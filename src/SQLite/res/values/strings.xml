@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="no_notes">No saved notes</string>
+	<string name="menu_insert">Add note</string>
+    <string name="menu_delete">Delete note</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="confirm">Save</string>
+    <string name="edit_note">Edit Note</string>
+</resources>

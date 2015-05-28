@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+		
+	<TextView android:id="@+id/Seleccion"  
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="ID opción seleccionada: (ninguna)" />
+		
+	<RadioGroup android:id="@+id/grupo"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+
+		<RadioButton android:id="@+id/radio1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Opción 1" />
+
+		<RadioButton android:id="@+id/radio2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Opción 2" />
+
+	</RadioGroup>
+
+</LinearLayout>

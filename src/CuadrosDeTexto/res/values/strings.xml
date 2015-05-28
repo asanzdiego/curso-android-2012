@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Text Box</string>
+  <string name="write">Write something:</string>
+  <string name="bold">Bold</string>
+  <string name="help1">Help1</string>
+  <string name="help2">Help2</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:stretchColumns="2" >
+  
+  <TableRow>
+    <TextView android:id="@+id/Mensaje"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+      android:layout_span="2" />
+  </TableRow>
+  
+  <TableRow>
+    <Button android:id="@+id/Boton1"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+      android:text="Púlsame" />
+    <ImageButton android:id="@+id/Boton2" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+      android:src="@drawable/validate" />
+  </TableRow>
+  
+  <TableRow>
+    <ToggleButton android:id="@+id/Boton3" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+      android:textOn="ON"
+      android:textOff="OFF" />
+    <ToggleButton android:id="@+id/Boton4"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+      android:textOn=""
+      android:textOff="" 
+      android:background="@drawable/toggle_style" />
+  </TableRow>
+
+</TableLayout>

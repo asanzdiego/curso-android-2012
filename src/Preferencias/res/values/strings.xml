@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string
+    name="hello">Introduce un texto para guardar:</string>
+  <string
+    name="app_name">Preferencias</string>
+  <string name="cargando">Cargando...</string>
+</resources>

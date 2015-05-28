@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/Menu1" android:title="Menú 1" android:icon="@drawable/tag"></item>
+  <item android:id="@+id/Menu2" android:title="Menú 2" android:icon="@drawable/filter"></item>
+  <item android:id="@+id/Menu3" android:title="Menú 3" android:icon="@drawable/chart">
+    <menu>
+      <item android:id="@+id/Submenu31" android:title="Submenú 3.1" />
+      <item android:id="@+id/Submenu32" android:title="Submenú 3.2" />
+    </menu>
+  </item>
+</menu>

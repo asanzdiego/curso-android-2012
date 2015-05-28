@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Cuadros de Texto</string>
+  <string name="write">Escribe algo:</string>
+  <string name="bold">Negrita</string>
+  <string name="help1">Ayuda1</string>
+  <string name="help2">Ayuda2</string>
+</resources>

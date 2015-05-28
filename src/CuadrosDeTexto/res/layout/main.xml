@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/container" 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" >
+        
+  <ImageView android:id="@+id/Icon"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/icon" />
+
+  <TextView android:id="@+id/Label" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/Icon"
+    android:text="@string/write" 
+    android:textSize="20dip" 
+    android:textColor="#FFFFFF" 
+    android:textStyle="bold"
+    android:background="#97C03D" 
+    android:typeface="monospace" />
+  
+  <EditText android:id="@+id/TextBox" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/Label" />
+  
+  <Button android:id="@+id/BoldButton"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/TextBox" 
+    android:layout_alignParentRight="true" 
+    android:text="@string/bold" />
+  
+  <Button android:id="@+id/HelpButton1"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/TextBox" 
+    android:layout_toLeftOf="@id/BoldButton" 
+    android:text="@string/help1" />
+
+  <Button android:id="@+id/HelpButton2"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/TextBox" 
+    android:layout_toLeftOf="@id/HelpButton1" 
+    android:text="@string/help2" />
+
+  <TextView android:id="@+id/Help" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/HelpButton2" />
+
+</RelativeLayout>

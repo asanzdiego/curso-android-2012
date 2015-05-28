@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JSON</string>
+    <string name="select_twitter_user">Select Twitter User</string>
+    <string name="view_twitter_user_timeline">View User Timeline</string>
+</resources>

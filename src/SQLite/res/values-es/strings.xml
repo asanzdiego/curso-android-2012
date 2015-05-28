@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notas</string>
+    <string name="no_notes">No hay ninguna nota</string>
+	<string name="menu_insert">Añadir nota</string>
+    <string name="menu_delete">Borrar nota</string>
+    <string name="title">Título</string>
+    <string name="body">Texto</string>
+    <string name="confirm">Guardar</string>
+    <string name="edit_note">Editar Nota</string>
+</resources>

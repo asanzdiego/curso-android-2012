@@ -1,0 +1,2804 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" > <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" > <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" > <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="generator" content="pandoc" />
+  <meta name="description" content="Android" />
+  <meta name="author" content="Adolfo Sanz De Diego" />
+  <title>Android</title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+
+  <!-- deck core css -->
+  <link rel="stylesheet" href="../lib/deck.js-master/core/deck.core.css">
+
+  <!-- deck extensions css -->
+  <link rel="stylesheet" href="../lib/deck.js-master/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/extensions/scale/deck.scale.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/extensions/status/deck.status.css">
+
+  <!-- deck slide theme css -->
+  <link rel="stylesheet" href="../lib/deck.js-master/themes/style/swiss.css">
+  <!--
+  <link rel="stylesheet" href="../lib/deck.js-master/themes/style/neon.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/themes/style/swiss.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/themes/style/web-2.0.css">
+  -->
+
+  <!-- deck slide transition css -->
+  <link rel="stylesheet" href="../lib/deck.js-transition-cube-master/cube.css">
+  <!--
+  <link rel="stylesheet" href="../lib/deck.js-transition-cube-master/cube.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/themes/transition/fade.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/themes/transition/horizontal-slide.css">
+  <link rel="stylesheet" href="../lib/deck.js-master/themes/transition/vertical-slide.css">
+  -->
+
+  <!-- custom css just for this page -->
+  <style>
+    figcaption {
+      display: none;
+      visibility:hidden;
+    }
+
+    #titlepage, #documentauthor, #documentdate {
+      text-align: center;
+    }
+
+    #titlepage {
+      font-size: 5.25em;
+      padding-top: 15%;
+    }
+
+    #documentauthor {
+      font-size: 2.25em;
+    }
+
+    #documentdate {
+      font-size: 1.25em;
+    }
+  </style>
+
+  <!-- modernizr deck js  -->
+  <script src="../lib/deck.js-master/modernizr.custom.js"></script>
+
+</head>
+<body class="deck-container">
+<section class="slide">
+  <h2 id="titlepage">Android</h2>
+  <h3 id="documentauthor">Adolfo Sanz De Diego</h3>
+  <h4 id="documentdate">Junio 2011 - Actualizado Julio 2012</h4>
+</section>
+
+<section id="créditos" class="titleslide slide level1"><h1><span class="header-section-number">1</span> Créditos</h1></section><section id="autor" class="slide level2">
+<h2><span class="header-section-number">1.1</span> Autor</h2>
+<ul>
+<li><strong>Adolfo Sanz De Diego</strong>
+<ul>
+<li>Correo: <a href="mailto:asanzdiego@gmail.com">asanzdiego@gmail.com</a></li>
+<li>Twitter: <span class="citation" data-cites="asanzdiego">[@asanzdiego]</span>(http://twitter.com/asanzdiego)</li>
+<li>Linkedin: <a href="http://www.linkedin.com/in/asanzdiego">http://www.linkedin.com/in/asanzdiego</a></li>
+<li>Blog: <a href="http://asanzdiego.blogspot.com.es">http://asanzdiego.blogspot.com.es</a></li>
+</ul></li>
+</ul>
+</section><section id="licencia" class="slide level2">
+<h2><span class="header-section-number">1.2</span> Licencia</h2>
+<ul>
+<li><strong>Este obra está bajo una licencia:</strong>
+<ul>
+<li><a href="http://creativecommons.org/licenses/by-sa/3.0/es/">Creative Commons Reconocimiento-CompartirIgual 3.0</a></li>
+</ul></li>
+<li><strong>El código fuente de los programas están bajo una licencia:</strong>
+<ul>
+<li><a href="http://www.viti.es/gnu/licenses/gpl.html">GPL 3.0</a></li>
+</ul></li>
+</ul>
+</section><section id="cofinanciado" class="slide level2">
+<h2><span class="header-section-number">1.3</span> Cofinanciado</h2>
+<figure>
+<img src="../img/logos.png" alt="Logos" /><figcaption>Logos</figcaption>
+</figure>
+</section>
+<section id="introducción" class="titleslide slide level1"><h1><span class="header-section-number">2</span> Introducción</h1></section><section id="los-inicios-de-android" class="slide level2">
+<h2><span class="header-section-number">2.1</span> Los inicios de Android</h2>
+<ul>
+<li><strong>2005</strong>
+<ul>
+<li>Google adquiere <strong>Android, Inc</strong>.
+<ul>
+<li>Pequeña empresa que desarrolla software para móviles.</li>
+</ul></li>
+</ul></li>
+<li><strong>2007</strong>
+<ul>
+<li>Nace la <strong>Open Handset Alliance</strong>.
+<ul>
+<li>Consorcio de empresas (operadoras, fabricantes, software) unidas con el objetivo de desarrollar estándares abiertos para móviles.</li>
+<li>Google, Intel, ARM, HTC, LG, Motorola, Samsumg, T-Mobile, Vodafone, etc.</li>
+</ul></li>
+</ul></li>
+<li><strong>2008</strong>
+<ul>
+<li>Publicado Android como <strong>Open Source</strong>:
+<ul>
+<li>Licencia Apache 2.0 + otras licencias (GPL v2 para el núcleo).</li>
+</ul></li>
+<li>Se abre el <strong>Android Market</strong>.</li>
+<li>HTC Dream (<strong>G1</strong>), primer teléfono con Android.</li>
+</ul></li>
+</ul>
+</section><section id="la-escalada-de-android" class="slide level2">
+<h2><span class="header-section-number">2.2</span> La escalada de Android</h2>
+<ul>
+<li><strong>2009</strong>
+<ul>
+<li>Motorola Droid vende 1 millón de unidades en 74 días
+<ul>
+<li>superando el record del iPhone de Apple.</li>
+</ul></li>
+<li><strong>16.000 aplicaciones</strong> en el Android Market: (66% gratuitas, 33% de pago)</li>
+</ul></li>
+<li><strong>2010</strong>
+<ul>
+<li>Se activan <strong>cada día 300.000 nuevos</strong> dispositivos con Android.</li>
+<li>Por primera vez la venta de Adroids supera a la de iPhones en EEUU.</li>
+</ul></li>
+<li><strong>2011</strong>
+<ul>
+<li>Se activan <strong>cada día 700.000 nuevos</strong> dispositivos con Android.</li>
+<li><strong>200.000 aplicaciones</strong> en el Android Market</li>
+</ul></li>
+<li><strong>2012</strong>
+<ul>
+<li>Se activan <strong>cada día 1 millón de nuevos</strong> dispositivos con Android.</li>
+<li><strong>600.000 aplicaciones</strong> en Google Play.</li>
+</ul></li>
+</ul>
+</section><section id="comparativa-mundial" class="slide level2">
+<h2><span class="header-section-number">2.3</span> Comparativa mundial</h2>
+<ul>
+<li><strong>2011</strong>:
+<ul>
+<li>Android: 37%</li>
+<li>iOS: 19%</li>
+<li>Otros: 44%</li>
+</ul></li>
+<li><strong>2012</strong>:
+<ul>
+<li>Android: 59%</li>
+<li>iOS: 23%</li>
+<li>Otros: 18%</li>
+</ul></li>
+</ul>
+<figure>
+<img src="../img/idc-smartphone-market-share-q1-2012.jpg" alt="Venta Mundial Smartphones" /><figcaption>Venta Mundial Smartphones</figcaption>
+</figure>
+</section><section id="comparativa-española-venta" class="slide level2">
+<h2><span class="header-section-number">2.4</span> Comparativa española (Venta)</h2>
+<figure>
+<img src="../img/ventas_smartphones_espana_2012.png" alt="Venta Española Smartphones" /><figcaption>Venta Española Smartphones</figcaption>
+</figure>
+</section><section id="comparativa-española-evolución" class="slide level2">
+<h2><span class="header-section-number">2.5</span> Comparativa española (Evolución)</h2>
+<figure>
+<img src="../img/evolucion_ventas_smartphones_espana_2012.png" alt="Evolución Venta Española Smartphones" /><figcaption>Evolución Venta Española Smartphones</figcaption>
+</figure>
+</section><section id="qué-es-android" class="slide level2">
+<h2><span class="header-section-number">2.6</span> ¿Qué es Android?</h2>
+<ul>
+<li>Es un <strong>Sistema Operativo</strong>, basado en el kernel de <strong>linux</strong>, diseñado para <strong>móviles y tablets</strong>.</li>
+<li>No es sólo eso, es además:
+<ul>
+<li>Conjunto de aplicaciones (agenda, contactos, navegador, etc.)</li>
+<li>Conjunto de bibliotecas (OpenGL, Media, SQLite, etc.)</li>
+<li>Framework (Activity, Intent, Service, Broadcast receivers, Content Provider, etc.)</li>
+<li>Entorno de trabajo (compilador, emulador, debuguer, etc.)</li>
+</ul></li>
+<li>Leer <a href="http://developer.android.com/guide/basics/what-is-android.html">http://developer.android.com/guide/basics/what-is-android.html</a></li>
+</ul>
+</section><section id="recursos-limitados" class="slide level2">
+<h2><span class="header-section-number">2.7</span> Recursos Limitados</h2>
+<ul>
+<li>Android está diseñado para ejecutarse en dispositivos con recursos limitados:
+<ul>
+<li>memoria, almacenamiento, CPU, pero sobre todo <strong>batería</strong>.</li>
+</ul></li>
+<li>Hay que esforzarse en desarrollar bien desde el primer momento.
+<ul>
+<li>Usar herramientas como PMD, CPD, FindBugs para aprender a mejorar.</li>
+<li>Leer <a href="http://developer.android.com/guide/practices/design/performance.html">http://developer.android.com/guide/practices/design/performance.html</a></li>
+</ul></li>
+<li>Hay que esforzarse en hacer aplicaciones usables para distintos dispositivos:
+<ul>
+<li>Distintos tamaños de pantalla.</li>
+<li>Distintas densidades de píxeles.</li>
+<li>Distintos componentes hardware (GPS, brújula, cámara, wifi, bluetooth, etc. )</li>
+<li>Leer <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a></li>
+</ul></li>
+</ul>
+</section><section id="cómo-se-programa-android" class="slide level2">
+<h2><span class="header-section-number">2.8</span> ¿Cómo se programa Android?</h2>
+<ul>
+<li>De forma nativa en C/C++ (bajo nivel)</li>
+<li>En <strong>Java</strong>:
+<ul>
+<li>Android dispone de una máquina virtual <strong>Dalvik</strong> que puede ejecutar aplicaciones hechas en Java.</li>
+</ul></li>
+</ul>
+</section><section id="arquitectura" class="slide level2">
+<h2><span class="header-section-number">2.9</span> Arquitectura</h2>
+<figure>
+<img src="../img/android-architecture.jpg" alt="Arquitectura - Esquema" /><figcaption>Arquitectura - Esquema</figcaption>
+</figure>
+</section><section id="arquitectura---kernel-linux" class="slide level2">
+<h2><span class="header-section-number">2.10</span> Arquitectura - Kernel Linux</h2>
+<figure>
+<img src="../img/android-architecture-linux-kernel.jpg" alt="Arquitectura - Kernel Linux" /><figcaption>Arquitectura - Kernel Linux</figcaption>
+</figure>
+<ul>
+<li>Android depende de <strong>Linux</strong> para los servicios base del sistema:
+<ul>
+<li>seguridad, gestión de memoria, gestión de procesos, controladores, etc.</li>
+</ul></li>
+<li>El núcleo también actúa como una capa de abstracción entre el <strong>hardware</strong> y el resto de la pila de software.</li>
+</ul>
+</section><section id="arquitectura---bibliotecas" class="slide level2">
+<h2><span class="header-section-number">2.11</span> Arquitectura - Bibliotecas</h2>
+<figure>
+<img src="../img/android-architecture-libraries.jpg" alt="Arquitectura - Bibliotecas" /><figcaption>Arquitectura - Bibliotecas</figcaption>
+</figure>
+<ul>
+<li>Android incluye un conjunto de <strong>bibliotecas de utilidades</strong> escritas en C/C++:
+<ul>
+<li>contenidos multimedia, gráficos 2D y 3D, base de datos SQLite, etc.</li>
+</ul></li>
+</ul>
+</section><section id="arquitectura---runtime" class="slide level2">
+<h2><span class="header-section-number">2.12</span> Arquitectura - Runtime</h2>
+<figure>
+<img src="../img/android-architecture-runtime.jpg" alt="Arquitectura - Runtime" /><figcaption>Arquitectura - Runtime</figcaption>
+</figure>
+<ul>
+<li>Android incluye un conjunto de <strong>bibliotecas base</strong> con:
+<ul>
+<li>el API casi completo de Java,</li>
+<li>otras API muy usadas en entornos Java.</li>
+</ul></li>
+<li>Cada aplicación Android corre su propio proceso independiente, con su propia memoria, y con su propia instancia de la máquina virtual <strong>Dalvik</strong>:
+<ul>
+<li>Dalvik está optimizada para requerir poca memoria.</li>
+<li>Dalvik ejecuta archivos en el formato Dalvik Executable (.dex).</li>
+<li>Dalvik incluye una herramienta para transformar los .class de Java a .dex</li>
+</ul></li>
+</ul>
+</section><section id="arquitectura---framework" class="slide level2">
+<h2><span class="header-section-number">2.13</span> Arquitectura - Framework</h2>
+<figure>
+<img src="../img/android-architecture-framework.jpg" alt="Arquitectura - Framework" /><figcaption>Arquitectura - Framework</figcaption>
+</figure>
+<ul>
+<li>Los desarrolladores tienen acceso a los mismos APIs usados por las aplicaciones base.</li>
+<li>El framework está diseñado para simplificar la <strong>reutilización de componentes</strong>:
+<ul>
+<li>cualquier aplicación puede publicar sus capacidades</li>
+<li>y cualquier otra aplicación puede luego hacer uso de esas capacidades</li>
+<li>(sujeto a reglas de seguridad del framework).</li>
+</ul></li>
+</ul>
+</section><section id="arquitectura---aplicaciones" class="slide level2">
+<h2><span class="header-section-number">2.14</span> Arquitectura - Aplicaciones</h2>
+<figure>
+<img src="../img/android-architecture-applications.jpg" alt="Arquitectura - Aplicaciones" /><figcaption>Arquitectura - Aplicaciones</figcaption>
+</figure>
+<ul>
+<li>Las <strong>aplicaciones</strong> base incluyen:
+<ul>
+<li>un cliente de correo electrónico, un programa de SMS, un calendario, mapas, navegador, contactos y otros.</li>
+</ul></li>
+<li>Estas aplicaciones están <strong>disponibles</strong> para el resto de aplicaciones.</li>
+</ul>
+</section><section id="versiones-de-android" class="slide level2">
+<h2><span class="header-section-number">2.15</span> Versiones de Android</h2>
+<figure>
+<img src="../img/android-plataform-version-distribution-jul-2012.png" alt="Versiones de Android" /><figcaption>Versiones de Android</figcaption>
+</figure>
+<p><a href="http://developer.android.com/resources/dashboard/platform-versions.html">http://developer.android.com/resources/dashboard/platform-versions.html</a></p>
+</section><section id="java-android" class="slide level2">
+<h2><span class="header-section-number">2.16</span> Java &amp; Android</h2>
+<ul>
+<li>En 1991 <strong>James Gosling</strong> creó una plataforma para ser usada en <strong>pequeños dispositivos</strong>.</li>
+<li>En 1994 se reorientó hacia la <strong>web</strong>.</li>
+<li>En 1995 <strong>Netscape</strong> anunció que sería soportado en sus <strong>navegadores</strong>.</li>
+<li>En 1996 aparece <strong>JDK 1.0</strong>.</li>
+<li>En 2001 ya es el lenguaje de programación más popular según el <strong>índice TIOBE</strong>.</li>
+<li>En 2004 aparece <strong>J2SE 5.0</strong></li>
+<li>En 2006 cambia su licencia a <strong>GPL</strong>.
+<ul>
+<li>En 2008 se convierte en el lenguaje de programación de <strong>Android</strong> (versión 5.0)</li>
+</ul></li>
+<li>En 2009 <strong>Oracle Corporation compra Sun Microsystems</strong>.
+<ul>
+<li>En 2010 <strong>Oracle demanda a Google</strong> por el uso de patentes de Java en Android.</li>
+</ul></li>
+</ul>
+</section><section id="entorno-de-java" class="slide level2">
+<h2><span class="header-section-number">2.17</span> Entorno de Java</h2>
+<figure>
+<img src="../img/java-entorno.png" alt="Entorno de Java" /><figcaption>Entorno de Java</figcaption>
+</figure>
+</section><section id="ejecución-de-java" class="slide level2">
+<h2><span class="header-section-number">2.18</span> Ejecución de Java</h2>
+<figure>
+<img src="../img/java-bytecode.png" alt="Ejecución de Java" /><figcaption>Ejecución de Java</figcaption>
+</figure>
+</section><section id="ejecución-de-otros-lenguajes" class="slide level2">
+<h2><span class="header-section-number">2.19</span> Ejecución de otros lenguajes</h2>
+<figure>
+<img src="../img/java-groovy-scala-bytecode.png" alt="Ejecución de otros lenguajes" /><figcaption>Ejecución de otros lenguajes</figcaption>
+</figure>
+</section><section id="java-vs-android" class="slide level2">
+<h2><span class="header-section-number">2.20</span> Java VS Android</h2>
+<figure>
+<img src="../img/java-compilation.png" alt="Compilación y ejecución en la Máquina Virtual de Java" /><figcaption>Compilación y ejecución en la Máquina Virtual de Java</figcaption>
+</figure>
+<figure>
+<img src="../img/android-compilation.png" alt="Compilación y ejecución en la Máquina Virtual de Dalvik" /><figcaption>Compilación y ejecución en la Máquina Virtual de Dalvik</figcaption>
+</figure>
+<figure>
+<img src="../img/android-vm-isolation.png" alt="Ejecución de aplicaciones en la MV de Java y en la MV de Dalvik" /><figcaption>Ejecución de aplicaciones en la MV de Java y en la MV de Dalvik</figcaption>
+</figure>
+</section><section id="distintas-plataformas-java" class="slide level2">
+<h2><span class="header-section-number">2.21</span> Distintas plataformas Java</h2>
+<figure>
+<img src="../img/java-plataformas.png" alt="Distintas plataformas Java" /><figcaption>Distintas plataformas Java</figcaption>
+</figure>
+<ul>
+<li><strong>Android</strong> usa sus propia máquina virtual, con sus propias APIs (muy parecidas a JSE pero no al 100% pues no tiene ni AWT ni SWING)</li>
+</ul>
+</section>
+<section id="instalación-y-configuración" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Instalación y Configuración</h1></section><section id="requisitos-hardware" class="slide level2">
+<h2><span class="header-section-number">3.1</span> Requisitos hardware</h2>
+<ul>
+<li>Sobre todo mucha <strong>RAM</strong>:
+<ul>
+<li>Si queremos utilizar un IDE como Eclipse y el plugin ADT de Android:
+<ul>
+<li>Windows: mínimo 3 GB, recomendable 4 GB</li>
+<li>Linux: mínimo 2 GB, recomendable 3 GB</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="requisitos-software" class="slide level2">
+<h2><span class="header-section-number">3.2</span> Requisitos software</h2>
+<ul>
+<li>Imprescindible:
+<ul>
+<li><strong>JDK</strong> (Java Development Kit)</li>
+<li><strong>Android SDK</strong> (Android Software Development Kit)</li>
+<li><strong>Android SDK Components</strong>:
+<ul>
+<li>SDK tools, SDK plataform-tools, documentation, samples.</li>
+<li>SDK plataform(s) par el <strong>AVD</strong> (Android Virtual Device)</li>
+</ul></li>
+</ul></li>
+<li>Recomendable:
+<ul>
+<li><strong>Eclipse</strong></li>
+<li><strong>Plugin ADT</strong> de Android para Eclipse</li>
+</ul></li>
+</ul>
+</section><section id="instalación-jdk-y-eclipse-en-windows" class="slide level2">
+<h2><span class="header-section-number">3.3</span> Instalación JDK y Eclipse en Windows</h2>
+<ul>
+<li>Descargar el JDK de:
+<ul>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></li>
+</ul></li>
+<li>Instalar el JDK:
+<ul>
+<li>Siguiente, siguiente, siguiente...</li>
+</ul></li>
+<li>Descargar &quot;Eclipse Classic&quot;:
+<ul>
+<li><a href="http://eclipse.org/downloads/">http://eclipse.org/downloads/</a></li>
+</ul></li>
+<li>Descomprimir Eclipse en una carpeta:
+<ul>
+<li>Botón derecho, descomprimir...</li>
+</ul></li>
+</ul>
+</section><section id="instalación-jdk-y-eclipse-en-linux" class="slide level2">
+<h2><span class="header-section-number">3.4</span> Instalación JDK y Eclipse en Linux</h2>
+<ul>
+<li>Instalar Eclipse (con su dependencia de Java -openjdk-)</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">apt-get</span> install eclipse</code></pre>
+</section><section id="instalación-del-sdk-en-windows" class="slide level2">
+<h2><span class="header-section-number">3.5</span> Instalación del SDK en Windows</h2>
+<ul>
+<li>Descargar el SDK (*.exe) de:
+<ul>
+<li><a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a></li>
+</ul></li>
+<li>Instalar el SDK:
+<ul>
+<li>Siguiente, siguiente, siguiente...</li>
+</ul></li>
+</ul>
+</section><section id="instalación-del-sdk-en-linux" class="slide level2">
+<h2><span class="header-section-number">3.6</span> Instalación del SDK en Linux</h2>
+<ul>
+<li>Descargar el SDK (*.tgz) de:
+<ul>
+<li><a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a></li>
+</ul></li>
+<li>Descomprimir SDK en una carpeta:
+<ul>
+<li>Botón derecho, descomprimir...</li>
+</ul></li>
+</ul>
+</section><section id="instalación-del-adt-en-el-eclipse" class="slide level2">
+<h2><span class="header-section-number">3.7</span> Instalación del ADT en el Eclipse</h2>
+<ul>
+<li>Instalar el plugin ADT (Android Development Tool) en Eclipse:
+<ul>
+<li>Abrir el Eclipse</li>
+<li><strong>Help &gt; Install New Software...</strong></li>
+<li><a href="http://dl-ssl.google.com/android/eclipse/">http://dl-ssl.google.com/android/eclipse/</a></li>
+<li>Siguiente, siguiente, siguiente...</li>
+</ul></li>
+<li>Configurar el plugin ADT (Android Development Tool) en Eclipse:
+<ul>
+<li>Abrir el Eclipse</li>
+<li><strong>Window &gt; Preferences &gt; Android &gt; SDK Location</strong></li>
+<li>Poner la ruta completa a la carpeta del SDK</li>
+</ul></li>
+<li>Descargas adicionales:
+<ul>
+<li>Abrir el Eclipse</li>
+<li><strong>Window &gt; Android SDK and AVD Manager</strong></li>
+<li>En <strong>Availables Packages</strong> &gt; seleccionar y descargar.</li>
+</ul></li>
+</ul>
+</section><section id="configurar-un-avd" class="slide level2">
+<h2><span class="header-section-number">3.8</span> Configurar un AVD</h2>
+<ul>
+<li>Podemos probar las aplicaciones en el emulador AVD (<strong>Android Virtal Device</strong>)</li>
+<li>Para crear un AVD:
+<ul>
+<li>Abrir el Eclipse</li>
+<li><strong>Window &gt; Android SDK and AVD Manager</strong></li>
+<li>En <strong>Virtual Devices</strong> &gt; pinchamos en <strong>New</strong>:
+<ul>
+<li>Añadimos nombre descriptivo,</li>
+<li>seleccionamos el target (versión) de Android,</li>
+<li>seleccionamos <strong>snapshot</strong> para que se cargue más rápido</li>
+<li>y añadimos características hardware (resolución de pantalla, cámara, GPS, etc.)</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="configuración" class="slide level2">
+<h2><span class="header-section-number">3.9</span> Configuración</h2>
+<ul>
+<li><strong>Recomendable</strong> actualizar el <strong>PATH</strong> con los siguintes directorios:
+<ul>
+<li>&lt;sdk&gt;/tools</li>
+<li>&lt;sdk&gt;/platform-tools</li>
+</ul></li>
+<li>En <strong>Windows</strong>:
+<ul>
+<li>Botón derecho en &quot;Mi PC&quot; &gt; &quot;Propiedades&quot; &gt; Pestaña &quot;Avanzado&quot; &gt; Botón &quot;Variables de Entorno&quot;</li>
+<li>Doble click en la variable PATH que está en &quot;Variables del Sistema&quot;</li>
+<li>Añadir a la variable PATH la ruta completa a los directorios: <sdk>/tools y <sdk>/platform-tools</li>
+</ul></li>
+<li>En <strong>Linux</strong>:
+<ul>
+<li>Editar el fichero ~/.bashrc file</li>
+<li>Añadir:</li>
+</ul></li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">export</span> <span class="ot">PATH=${PATH}</span>:<span class="kw">&lt;sdk&gt;</span>/tools:<span class="kw">&lt;</span>sdk<span class="kw">&gt;</span>/platform-tools</code></pre>
+</section><section id="código-fuente-android.jar" class="slide level2">
+<h2><span class="header-section-number">3.10</span> Código fuente android.jar</h2>
+<ul>
+<li>Para <strong>depurar</strong>, si queremos también depurar las clases de android, nos hace falta el código fuente.</li>
+<li>El <strong>código fuente</strong> se puede descargar directamente desde <a href="http://source.android.com/">http://source.android.com/</a> pero es complicado, pues está dividido en ramas, versiones y módulos.</li>
+<li>Lo mejor es buscar un <strong>zip</strong> con todos los fuentes para un target en concreto como por ejemplo desde <a href="http://android.opensourceror.org/2010/01/18/android-source/">http://android.opensourceror.org/2010/01/18/android-source/</a>.</li>
+<li>Ese zip hay que enlazarlo al android.jar que está dentro del target android del proyecto:
+<ul>
+<li>Botón derecho en <nombre-proyecto>/<target-android>/android.jar</li>
+<li>Properties</li>
+<li>Java Source Attachment</li>
+<li>Rellenar Location path</li>
+</ul></li>
+</ul>
+</section>
+<section id="estructura-general-de-un-proyecto" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Estructura General de un proyecto</h1></section><section id="carpetas" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Carpetas</h2>
+<ul>
+<li>Cuando creamos un nuevo proyecto Android en Eclipse se genera automáticamente la estructura de carpetas necesaria.</li>
+<li>Esta estructura será común a cualquier aplicación, independientemente de su tamaño y complejidad.</li>
+<li>Leer <a href="http://developer.android.com/guide/topics/resources/index.html">http://developer.android.com/guide/topics/resources/index.html</a></li>
+</ul>
+<figure>
+<img src="../img/android-estructura-proyecto.png" alt="Carpetas de un proyecto" /><figcaption>Carpetas de un proyecto</figcaption>
+</figure>
+</section><section id="carpeta-src" class="slide level2">
+<h2><span class="header-section-number">4.2</span> Carpeta src</h2>
+<ul>
+<li>Contiene todo el <strong>código fuente</strong> de la aplicación, código de la interfaz gráfica, clases auxiliares, etc.</li>
+</ul>
+<figure>
+<img src="../img/android-estructura-proyecto-src.png" alt="La carpeta src" /><figcaption>La carpeta src</figcaption>
+</figure>
+</section><section id="carpeta-res-i" class="slide level2">
+<h2><span class="header-section-number">4.3</span> Carpeta res (I)</h2>
+<ul>
+<li>Contiene todos los <strong>ficheros de recursos</strong> necesarios para el proyecto:
+<ul>
+<li>imágenes, vídeos, cadenas de texto, etc.</li>
+</ul></li>
+</ul>
+<figure>
+<img src="../img/android-estructura-proyecto-res.png" alt="La carpeta res" /><figcaption>La carpeta res</figcaption>
+</figure>
+</section><section id="carpeta-res-ii" class="slide level2">
+<h2><span class="header-section-number">4.4</span> Carpeta res (II)</h2>
+<ul>
+<li>Los diferentes tipos de recursos se deberán distribuir entre las siguientes carpetas:
+<ul>
+<li><strong>/res/drawable/</strong> Contienen las imágenes de la aplicación.
+<ul>
+<li>Se puede dividir en función de la resolución del dispositivo:
+<ul>
+<li><strong>/drawable-ldpi</strong> para resoluciones bajas</li>
+<li><strong>/drawable-mdpi</strong> para resoluciones medias</li>
+<li><strong>/drawable-hdpi</strong> para resoluciones altas</li>
+</ul></li>
+</ul></li>
+<li><strong>/res/layout/</strong> Contienen los ficheros de definición de la interfaz gráfica.
+<ul>
+<li>Se puede dividir en función de la orientación del dispositivo:
+<ul>
+<li><strong>/layout-port</strong> para orientaciones tipo 'portrait'</li>
+<li><strong>/layout-land</strong> para orientaciones tipo 'landscape'</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="carpeta-res-iii" class="slide level2">
+<h2><span class="header-section-number">4.5</span> Carpeta res (III)</h2>
+<ul>
+<li>Otra carpeta muy importante es la de <strong>values</strong>:
+<ul>
+<li><strong>/res/values/</strong>
+<ul>
+<li>Se puede dividir por idiomas:
+<ul>
+<li><strong>/res/values-es/</strong></li>
+<li><strong>/res/values-fr/</strong></li>
+</ul></li>
+<li>Contiene otros recursos de la aplicación:
+<ul>
+<li><strong>strings.xml</strong> para las cadenas de texto</li>
+<li><strong>styles.xml</strong> para los estilos</li>
+<li><strong>colors.xml</strong> para los colores</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="carpeta-res-iii-1" class="slide level2">
+<h2><span class="header-section-number">4.6</span> Carpeta res (III)</h2>
+<ul>
+<li>Hay otras carpetas menos importantes que también se pueden llegar a usar:
+<ul>
+<li><strong>/res/anim/</strong> Contiene la definición de las animaciones de la aplicación.</li>
+<li><strong>/res/menu/</strong> Contiene la definición de los menús de la aplicación.</li>
+<li><strong>/res/xml/</strong> Contiene los ficheros XML utilizados por la aplicación.</li>
+<li><strong>/res/raw/</strong> Contiene recursos adicionales, normalmente en formato distinto a XML, que no se incluyan en el resto de carpetas de recursos.</li>
+</ul></li>
+<li>Ver <a href="http://developer.android.com/guide/topics/resources/providing-resources.html">http://developer.android.com/guide/topics/resources/providing-resources.html</a></li>
+</ul>
+</section><section id="carpeta-gen" class="slide level2">
+<h2><span class="header-section-number">4.7</span> Carpeta gen</h2>
+<ul>
+<li>Contiene una clase <strong>generada automáticamente</strong> al compilar el proyecto (no tocar), que referencia cada uno de los recursos de nuestra aplicación.</li>
+</ul>
+<figure>
+<img src="../img/android-estructura-proyecto-gen.png" alt="La carpeta gen" /><figcaption>La carpeta gen</figcaption>
+</figure>
+</section><section id="carpeta-assets" class="slide level2">
+<h2><span class="header-section-number">4.8</span> Carpeta assets</h2>
+<ul>
+<li>Contiene todos los demás ficheros auxiliares necesarios para la aplicación, como ficheros de configuración, de datos, etc.</li>
+</ul>
+</section><section id="fichero-androidmanifest.xml" class="slide level2">
+<h2><span class="header-section-number">4.9</span> Fichero AndroidManifest.xml</h2>
+<ul>
+<li>Contiene la definición de los <strong>aspectos principales</strong> de la aplicación, como por ejemplo:
+<ul>
+<li>su identificación (nombre, versión, icono, etc.),</li>
+<li>sus componentes (pantallas, mensajes, etc.),</li>
+<li>o los <strong>permisos</strong> necesarios para su ejecución.</li>
+</ul></li>
+</ul>
+</section>
+<section id="componentes-principales" class="titleslide slide level1"><h1><span class="header-section-number">5</span> Componentes Principales</h1></section><section id="activity" class="slide level2">
+<h2><span class="header-section-number">5.1</span> Activity</h2>
+<ul>
+<li>Una <strong>actividad</strong> representa una ventana de la aplicación.</li>
+<li>Está asociada con una vista.</li>
+<li>Puede escuchar los eventos originados en los distintos controles gráficos.</li>
+<li>Leer <a href="http://developer.android.com/guide/topics/fundamentals/activities.html">http://developer.android.com/guide/topics/fundamentals/activities.html</a></li>
+</ul>
+</section><section id="ciclo-de-vida-de-un-activity" class="slide level2">
+<h2><span class="header-section-number">5.2</span> Ciclo de vida de un Activity</h2>
+<figure>
+<img src="../img/activity-lifecycle.png" alt="Ciclo de vida de un Activity" /><figcaption>Ciclo de vida de un Activity</figcaption>
+</figure>
+</section><section id="view" class="slide level2">
+<h2><span class="header-section-number">5.3</span> View</h2>
+<ul>
+<li>Una <strong>vista</strong> se puede programar por código o mediante XML (aconsejable).</li>
+<li>Existen un gran número de controles (cuadros de texto, botones, listas desplegables, etc.).</li>
+<li>Podemos crearnos nuestros propios controles.</li>
+<li>A los distintos controles se les puede asociar eventos.</li>
+<li>Existen también distintos layouts (linear layout, table layout, relative layout, etc.) donde agrupar distintos controles.</li>
+<li>Leer <a href="http://developer.android.com/guide/topics/ui/index.html">http://developer.android.com/guide/topics/ui/index.html</a></li>
+</ul>
+</section><section id="service" class="slide level2">
+<h2><span class="header-section-number">5.4</span> Service</h2>
+<ul>
+<li>Un <strong>servicio</strong> es un componente sin interfaz gráfica que se ejecuta en segundo plano.</li>
+<li>Leer <a href="http://developer.android.com/guide/topics/fundamentals/services.html">http://developer.android.com/guide/topics/fundamentals/services.html</a></li>
+</ul>
+</section><section id="content-provider" class="slide level2">
+<h2><span class="header-section-number">5.5</span> Content Provider</h2>
+<ul>
+<li>Un <strong>proveedor de contenidos</strong>, comparte datos con otras aplicaciones.</li>
+<li>Leer <a href="http://developer.android.com/guide/topics/providers/content-providers.html">http://developer.android.com/guide/topics/providers/content-providers.html</a></li>
+</ul>
+</section><section id="broadcast-receiver" class="slide level2">
+<h2><span class="header-section-number">5.6</span> Broadcast Receiver</h2>
+<ul>
+<li>Un <strong>receptor de difusiones</strong>, es un componente destinado a detectar y reaccionar ante determinados mensajes generados por el sistema o por otras aplicaciones.</li>
+<li>Leer <a href="http://developer.android.com/reference/android/content/BroadcastReceiver.html">http://developer.android.com/reference/android/content/BroadcastReceiver.html</a></li>
+</ul>
+</section><section id="app-widget" class="slide level2">
+<h2><span class="header-section-number">5.7</span> App Widget</h2>
+<ul>
+<li>Un <strong>reproductor</strong> es un elemento visual que se coloca en la pantalla principal del dispositivo y muestra información que puede ser actualizada periódicamente.</li>
+<li>Leer <a href="http://developer.android.com/guide/topics/appwidgets/index.html">http://developer.android.com/guide/topics/appwidgets/index.html</a></li>
+</ul>
+</section><section id="intent" class="slide level2">
+<h2><span class="header-section-number">5.8</span> Intent</h2>
+<ul>
+<li>Un <strong>propósito</strong> es el elemento básico de comunicación entre los distintos elementos que hemos descrito anteriormente.</li>
+<li>Son los mensajes que son enviados entre los distintos componentes de una aplicación, entre distintas aplicaciones o entre el sistema y otras aplicaciones.</li>
+<li>Leer <a href="http://developer.android.com/guide/topics/intents/intents-filters.html">http://developer.android.com/guide/topics/intents/intents-filters.html</a></li>
+</ul>
+</section>
+<section id="primera-aplicación" class="titleslide slide level1"><h1><span class="header-section-number">6</span> Primera aplicación</h1></section><section id="hola-usuario" class="slide level2">
+<h2><span class="header-section-number">6.1</span> Hola Usuario</h2>
+<figure>
+<img src="../img/pantalla-hola-usuario.png" alt="Hola Usuario" /><figcaption>Hola Usuario</figcaption>
+</figure>
+</section><section id="nuevo-proyecto-android" class="slide level2">
+<h2><span class="header-section-number">6.2</span> Nuevo proyecto Android</h2>
+<ul>
+<li>Abrimos el Eclipse</li>
+<li><strong>File &gt; New &gt; Other.. &gt; Android Proyect</strong></li>
+<li>Nombre &quot;<strong>HolaUsuario</strong>&quot;</li>
+<li>Actividad <strong>Main</strong></li>
+</ul>
+</section><section id="resvaluesstrings.xml" class="slide level2">
+<h2><span class="header-section-number">6.3</span> /res/values/strings.xml</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;resources&gt;</span>
+  <span class="kw">&lt;string</span><span class="ot"> name=</span><span class="st">&quot;app_name&quot;</span><span class="kw">&gt;</span>Hola Usuario<span class="kw">&lt;/string&gt;</span>
+  <span class="kw">&lt;string</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="kw">&gt;</span>Escribe tu nombre:<span class="kw">&lt;/string&gt;</span>
+  <span class="kw">&lt;string</span><span class="ot"> name=</span><span class="st">&quot;hola&quot;</span><span class="kw">&gt;</span>Hola<span class="kw">&lt;/string&gt;</span>
+<span class="kw">&lt;/resources&gt;</span></code></pre>
+</section><section id="reslayoutmain.xml" class="slide level2">
+<h2><span class="header-section-number">6.4</span> /res/layout/main.xml</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+
+<span class="kw">&lt;LinearLayout</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  android:orientation=</span><span class="st">&quot;vertical&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span> <span class="kw">&gt;</span>
+
+  <span class="kw">&lt;TextView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/LblNombre&quot;</span>
+<span class="ot">    android:text=</span><span class="st">&quot;@string/nombre&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span> <span class="kw">/&gt;</span>
+
+  <span class="kw">&lt;EditText</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/TxtNombre&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span> <span class="kw">/&gt;</span>
+
+  <span class="kw">&lt;Button</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/BtnHola&quot;</span>
+<span class="ot">    android:text=</span><span class="st">&quot;@string/hola&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/LinearLayout&gt;</span></code></pre>
+</section><section id="reslayoutsaludo.xml" class="slide level2">
+<h2><span class="header-section-number">6.5</span> /res/layout/saludo.xml</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+
+<span class="kw">&lt;LinearLayout</span>
+<span class="ot">  xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;TextView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/TxtSaludo&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/LinearLayout&gt;</span></code></pre>
+</section><section id="usuarioactivity.java" class="slide level2">
+<h2><span class="header-section-number">6.6</span> UsuarioActivity.java</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> UsuarioActivity <span class="kw">extends</span> Activity {
+
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCreate</span>(<span class="dt">final</span> Bundle savedInstanceState) {
+    <span class="kw">super</span>.<span class="fu">onCreate</span>(savedInstanceState);
+    <span class="kw">this</span>.<span class="fu">setContentView</span>(R.<span class="fu">layout</span>.<span class="fu">main</span>);
+
+    <span class="co">// Localizamos los controles</span>
+    <span class="dt">final</span> EditText txtNombre = (EditText) <span class="kw">this</span>.<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">TxtNombre</span>);
+    <span class="dt">final</span> Button btnHola = (Button) <span class="kw">this</span>.<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">BtnHola</span>);
+
+    <span class="co">// Añadimos un Listener al botón</span>
+    btnHola.<span class="fu">setOnClickListener</span>(<span class="kw">new</span> <span class="fu">OnClickListener</span>() {
+
+      <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onClick</span>(<span class="dt">final</span> View view) {
+        <span class="co">// Creamos el Intent</span>
+        <span class="dt">final</span> Intent intent = <span class="kw">new</span> <span class="fu">Intent</span>(UsuarioActivity.<span class="fu">this</span>, Saludo.<span class="fu">class</span>);
+
+        <span class="co">// Creamos la información a pasar entre actividades</span>
+        <span class="dt">final</span> Bundle bundle = <span class="kw">new</span> <span class="fu">Bundle</span>();
+        bundle.<span class="fu">putString</span>(<span class="st">&quot;NOMBRE&quot;</span>, txtNombre.<span class="fu">getText</span>().<span class="fu">toString</span>());
+
+        <span class="co">// Añadimos la información al intent</span>
+        intent.<span class="fu">putExtras</span>(bundle);
+
+        <span class="co">// Iniciamos la nueva actividad</span>
+        UsuarioActivity.<span class="fu">this</span>.<span class="fu">startActivity</span>(intent);
+      }
+    });
+  }
+}</code></pre>
+</section><section id="saludo.java" class="slide level2">
+<h2><span class="header-section-number">6.7</span> Saludo.java</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Saludo <span class="kw">extends</span> Activity {
+
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCreate</span>(<span class="dt">final</span> Bundle savedInstanceState) {
+    <span class="kw">super</span>.<span class="fu">onCreate</span>(savedInstanceState);
+    <span class="kw">this</span>.<span class="fu">setContentView</span>(R.<span class="fu">layout</span>.<span class="fu">saludo</span>);
+
+    <span class="co">// Localizamos los controles</span>
+    <span class="dt">final</span> TextView txtSaludo = (TextView) <span class="kw">this</span>.<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">TxtSaludo</span>);
+
+    <span class="co">// Recuperamos la información pasada en el Intent</span>
+    <span class="dt">final</span> Bundle bundle = <span class="kw">this</span>.<span class="fu">getIntent</span>().<span class="fu">getExtras</span>();
+
+    <span class="co">// Construimos el mensaje a mostrar</span>
+    <span class="dt">final</span> String mensaje = <span class="kw">this</span>.<span class="fu">getString</span>(R.<span class="fu">string</span>.<span class="fu">hola</span>) + <span class="st">&quot; &quot;</span> + bundle.<span class="fu">getString</span>(<span class="st">&quot;NOMBRE&quot;</span>);
+
+    <span class="co">// Mostramos el mensaje</span>
+    txtSaludo.<span class="fu">setText</span>(mensaje);
+  }
+}</code></pre>
+</section><section id="androidmanifest.xml" class="slide level2">
+<h2><span class="header-section-number">6.8</span> AndroidManifest.xml</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+
+<span class="kw">&lt;manifest</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  package=</span><span class="st">&quot;curso.android&quot;</span><span class="ot"> android:versionCode=</span><span class="st">&quot;1&quot;</span><span class="ot"> android:versionName=</span><span class="st">&quot;1.0&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;uses-sdk</span><span class="ot"> android:minSdkVersion=</span><span class="st">&quot;7&quot;</span> <span class="kw">/&gt;</span>
+
+  <span class="kw">&lt;application</span><span class="ot"> android:icon=</span><span class="st">&quot;@drawable/icon&quot;</span><span class="ot"> android:label=</span><span class="st">&quot;@string/app_name&quot;</span><span class="kw">&gt;</span>
+
+    <span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.UsuarioActivity&quot;</span><span class="ot"> android:label=</span><span class="st">&quot;@string/app_name&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;intent-filter&gt;</span>
+        <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.action.MAIN&quot;</span> <span class="kw">/&gt;</span>
+        <span class="kw">&lt;category</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.category.LAUNCHER&quot;</span> <span class="kw">/&gt;</span>
+      <span class="kw">&lt;/intent-filter&gt;</span>
+    <span class="kw">&lt;/activity&gt;</span>
+
+    <span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.Saludo&quot;</span> <span class="kw">/&gt;</span>
+
+  <span class="kw">&lt;/application&gt;</span>
+
+<span class="kw">&lt;/manifest&gt;</span></code></pre>
+</section>
+<section id="layouts" class="titleslide slide level1"><h1><span class="header-section-number">7</span> Layouts</h1></section><section id="framelayout" class="slide level2">
+<h2><span class="header-section-number">7.1</span> FrameLayout</h2>
+<ul>
+<li>Coloca todos sus controles hijos alineados con su esquina superior izquierda, de forma que cada control quedará oculto por el control siguiente (a menos que éste último tenga transparencia).</li>
+<li>Suele utilizarse para mostrar un único control en su interior.</li>
+<li>Los componentes deberán establecer
+<ul>
+<li>sus propiedades:
+<ul>
+<li><strong>android:layout_width</strong> y</li>
+<li><strong>android:layout_height</strong></li>
+</ul></li>
+<li>con los valores:
+<ul>
+<li><strong>fill_parent</strong>: para que el componente tome la dimensión de su layout.</li>
+<li><strong>wrap_content</strong>: para que el componente tome la dimensión de su contenido.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="ejemplo-framelayout" class="slide level2">
+<h2><span class="header-section-number">7.2</span> Ejemplo FrameLayout</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;FrameLayout</span>
+<span class="ot">  xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;EditText</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Texto&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/FrameLayout&gt;</span></code></pre>
+</section><section id="linearlayout" class="slide level2">
+<h2><span class="header-section-number">7.3</span> LinearLayout</h2>
+<ul>
+<li>Apila uno tras otro los componentes de forma horizontal o vertical según se establezca su propiedad <strong>android:orientation</strong>.</li>
+<li>Al igual que en FrameLayout, los componentes deberán establecer sus propiedades <strong>android:layout_width</strong> y <strong>android:layout_height</strong> para determinar sus dimensiones.</li>
+<li>Además podrán establecer la propiedad <strong>android:layout_weight</strong>:
+<ul>
+<li>Nos permite dimensionar los componentes de forma proporcional.</li>
+<li>En el ejemplo <strong>Texto2</strong> ocupará el doble que <strong>Texto1</strong>.</li>
+</ul></li>
+<li>Leer <a href="http://developer.android.com/resources/tutorials/views/hello-linearlayout.html">http://developer.android.com/resources/tutorials/views/hello-linearlayout.html</a></li>
+</ul>
+</section><section id="ejemplo-linearlayout" class="slide level2">
+<h2><span class="header-section-number">7.4</span> Ejemplo LinearLayout</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;LinearLayout</span>
+<span class="ot">    xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">    android:orientation=</span><span class="st">&quot;vertical&quot;</span><span class="kw">&gt;</span>
+
+    <span class="kw">&lt;EditText</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Texto1&quot;</span>
+<span class="ot">        android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">        android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">        android:layout_weight=</span><span class="st">&quot;1&quot;</span> <span class="kw">/&gt;</span>
+
+    <span class="kw">&lt;EditText</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Texto2&quot;</span>
+<span class="ot">        android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">        android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">        android:layout_weight=</span><span class="st">&quot;2&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/LinearLayout&gt;</span></code></pre>
+</section><section id="tablelayout" class="slide level2">
+<h2><span class="header-section-number">7.5</span> TableLayout</h2>
+<ul>
+<li>Permite distribuir los componentes en filas y columnas.</li>
+<li>Los componentes podrán establecer las propiedades:
+<ul>
+<li><strong>android:layout_span</strong> si quieren expandirse por más de una columna,</li>
+<li><strong>android:gravity=&quot;left|center|right&quot;</strong> si quieren alinear el texto.</li>
+</ul></li>
+<li>Leer <a href="http://developer.android.com/resources/tutorials/views/hello-tablelayout.html">http://developer.android.com/resources/tutorials/views/hello-tablelayout.html</a></li>
+</ul>
+</section><section id="ejemplo-tablelayout" class="slide level2">
+<h2><span class="header-section-number">7.6</span> Ejemplo TableLayout</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;TableLayout</span>
+<span class="ot">  xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span> <span class="kw">&gt;</span>
+
+  <span class="kw">&lt;TableRow&gt;</span>
+    <span class="kw">&lt;TextView</span><span class="ot"> android:text=</span><span class="st">&quot;Celda 1.1&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;TextView</span><span class="ot"> android:text=</span><span class="st">&quot;Celda 1.2&quot;</span><span class="ot"> android:gravity=</span><span class="st">&quot;right&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/TableRow&gt;</span>
+
+  <span class="kw">&lt;TableRow&gt;</span>
+    <span class="kw">&lt;TextView</span><span class="ot"> android:text=</span><span class="st">&quot;Celda 2&quot;</span><span class="ot"> android:layout_span=</span><span class="st">&quot;2&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/TableRow&gt;</span>
+
+<span class="kw">&lt;/TableLayout&gt;</span></code></pre>
+</section><section id="relativelayout" class="slide level2">
+<h2><span class="header-section-number">7.7</span> RelativeLayout</h2>
+<ul>
+<li>Permite especificar la posición de cada componente de forma relativa.</li>
+<li>En el ejemplo, el botón <strong>BtnAceptar</strong>:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="co">&lt;!-- debajo del cuadro de texto TxtNombre --&gt;</span>
+android:layout_below=”@id/TxtNombre”)</code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="co">&lt;!-- a la derecha del layout padre --&gt;</span>
+android:layout_alignParentRight=”true”)</code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="co">&lt;!-- dejará un margen a su izquierda de 10 density-independent-pixels --&gt;</span>
+android:layout_marginLeft=”10dpi”).</code></pre>
+<ul>
+<li>Leer <a href="http://developer.android.com/resources/tutorials/views/hello-relativelayout.html">http://developer.android.com/resources/tutorials/views/hello-relativelayout.html</a></li>
+</ul>
+</section><section id="ejemplo-relativelayout" class="slide level2">
+<h2><span class="header-section-number">7.8</span> Ejemplo RelativeLayout</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;RelativeLayout</span>
+<span class="ot">  xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android</span>
+<span class="st">  android:layout_width=&quot;</span><span class="er">fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span> <span class="kw">&gt;</span>
+
+  <span class="kw">&lt;EditText</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/TxtNombre&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span>
+
+  <span class="kw">&lt;Button</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/BtnAceptar&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_below=</span><span class="st">&quot;@id/TxtNombre&quot;</span>
+<span class="ot">    android:layout_alignParentRight=</span><span class="st">&quot;true&quot;</span>
+<span class="ot">    android:layout_marginLeft=</span><span class="st">&quot;10dp&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/RelativeLayout&gt;</span></code></pre>
+</section><section id="propiedades-del-relativelayout-i" class="slide level2">
+<h2><span class="header-section-number">7.9</span> Propiedades del RelativeLayout (I)</h2>
+<ul>
+<li>Posición relativa a otro control:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml">android:layout_above.
+android:layout_below.
+android:layout_toLeftOf.
+android:layout_toRightOf.
+android:layout_alignLeft.
+android:layout_alignRight.
+android:layout_alignTop.
+android:layout_alignBottom.
+android:layout_alignBaseline.</code></pre>
+</section><section id="propiedades-del-relativelayout-ii" class="slide level2">
+<h2><span class="header-section-number">7.10</span> Propiedades del RelativeLayout (II)</h2>
+<ul>
+<li>Posición relativa al layout padre:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml">android:layout_alignParentLeft
+android:layout_alignParentRight
+android:layout_alignParentTop
+android:layout_alignParentBottom
+android:layout_centerHorizontal
+android:layout_centerVertical
+android:layout_centerInParent</code></pre>
+</section><section id="propiedades-de-los-layouts" class="slide level2">
+<h2><span class="header-section-number">7.11</span> Propiedades de los Layouts</h2>
+<ul>
+<li>Opciones de margen:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml">android:layout_margin
+android:layout_marginBottom
+android:layout_marginTop
+android:layout_marginLeft
+android:layout_marginRight</code></pre>
+<ul>
+<li>Opciones de espaciado o padding :</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml">android:padding
+android:paddingBottom
+android:paddingTop
+android:paddingLeft
+android:paddingRight</code></pre>
+</section>
+<section id="botones" class="titleslide slide level1"><h1><span class="header-section-number">8</span> Botones</h1></section><section id="button" class="slide level2">
+<h2><span class="header-section-number">8.1</span> Button</h2>
+<ul>
+<li>Botón con texto 'Púlsame' definido en la propiedad <strong>android:text</strong>.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;Button</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Boton1&quot;</span>
+    android:text=&quot;Púl<span class="er">same&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<figure>
+<img src="../img/pantalla-botones-01.png" alt="Button" /><figcaption>Button</figcaption>
+</figure>
+</section><section id="imagebutton" class="slide level2">
+<h2><span class="header-section-number">8.2</span> ImageButton</h2>
+<ul>
+<li>Botón con una 'imagen' definida en la propiedad <strong>android:src</strong>.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;ImageButton</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Boton2&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:src=</span><span class="st">&quot;@drawable/validate&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<figure>
+<img src="../img/pantalla-botones-02.png" alt="ImageButton" /><figcaption>ImageButton</figcaption>
+</figure>
+</section><section id="togglebutton" class="slide level2">
+<h2><span class="header-section-number">8.3</span> ToggleButton</h2>
+<ul>
+<li>Tiene dos estados:
+<ul>
+<li><strong>pulsado</strong> cuyo texto se asigna en la propiedad <strong>android:textOn</strong> y</li>
+<li><strong>no pulsado</strong> cuyo texto se asigna en la propiedad <strong>android:textOn</strong>.</li>
+</ul></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;ToggleButton</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Boton3&quot;</span>
+<span class="ot">    android:textOn=</span><span class="st">&quot;ON&quot;</span>
+<span class="ot">    android:textOff=</span><span class="st">&quot;OFF&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<figure>
+<img src="../img/pantalla-botones-03.png" alt="ToggleButton" /><figcaption>ToggleButton</figcaption>
+</figure>
+</section><section id="eventos-i" class="slide level2">
+<h2><span class="header-section-number">8.4</span> Eventos (I)</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> ToggleButton boton3 = (ToggleButton) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Boton3</span>);
+
+boton3.<span class="fu">setOnClickListener</span>(<span class="kw">new</span> View.<span class="fu">OnClickListener</span>() {
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onClick</span>(<span class="dt">final</span> View view) {
+      <span class="kw">if</span>(boton3.<span class="fu">isChecked</span>()) {
+        mensaje.setText(<span class="st">&quot;Botón 3: ON&quot;</span>);
+      } <span class="kw">else</span> {
+        mensaje.setText(<span class="st">&quot;Botón 3: OFF&quot;</span>);
+      }
+    }
+  }
+);</code></pre>
+</section><section id="eventos-ii" class="slide level2">
+<h2><span class="header-section-number">8.5</span> Eventos (II)</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> ToggleButton boton3 = (ToggleButton) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Boton3</span>);
+
+boton3.<span class="fu">setOnClickListener</span>(<span class="kw">new</span> View.<span class="fu">OnClickListener</span>() {
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onClick</span>(<span class="dt">final</span> View view) {
+      <span class="dt">final</span> ToggleButton botonEvento = (ToggleButton) view;
+      <span class="kw">if</span>(botonEvento.<span class="fu">isChecked</span>()) {
+        mensaje.setText(<span class="st">&quot;Botón 3: ON&quot;</span>);
+      } <span class="kw">else</span> {
+        mensaje.setText(<span class="st">&quot;Botón 3: OFF&quot;</span>);
+      }
+    }
+  }
+);</code></pre>
+</section><section id="otras-propiedades" class="slide level2">
+<h2><span class="header-section-number">8.6</span> Otras propiedades:</h2>
+<ul>
+<li>color de fondo (android:background),</li>
+<li>estilo de fuente (android:typeface),</li>
+<li>color de fuente (android:textcolor),</li>
+<li>tamaño de fuente (android:textSize),</li>
+<li>etc.</li>
+</ul>
+</section><section id="ejemplo-personalización" class="slide level2">
+<h2><span class="header-section-number">8.7</span> Ejemplo personalización</h2>
+<figure>
+<img src="../img/pantalla-botones-04-bis.png" alt="Botón personalizado" /><figcaption>Botón personalizado</figcaption>
+</figure>
+</section><section id="personalizar-el-aspecto" class="slide level2">
+<h2><span class="header-section-number">8.8</span> Personalizar el aspecto</h2>
+<ul>
+<li>/res/drawable/toggle-style.xml</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;selector</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;item</span><span class="ot"> android:state_checked=</span><span class="st">&quot;false&quot;</span><span class="ot"> android:drawable=</span><span class="st">&quot;@drawable/ko&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;item</span><span class="ot"> android:state_checked=</span><span class="st">&quot;true&quot;</span><span class="ot"> android:drawable=</span><span class="st">&quot;@drawable/ok&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/selector&gt;</span></code></pre>
+<ul>
+<li>/res/layout/main.xml</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;ToggleButton</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Boton4&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">  android:textOn=</span><span class="st">&quot;&quot;</span>
+<span class="ot">  android:textOff=</span><span class="st">&quot;&quot;</span>
+<span class="ot">  android:background=</span><span class="st">&quot;@drawable/toggle-style&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section>
+<section id="imágenes-y-textos" class="titleslide slide level1"><h1><span class="header-section-number">9</span> Imágenes y textos</h1></section><section id="imágenes-y-textos-en-android" class="slide level2">
+<h2><span class="header-section-number">9.1</span> Imágenes y textos en Android</h2>
+<figure>
+<img src="../img/pantalla-text-box.png" alt="Imágenes y textos en Android" /><figcaption>Imágenes y textos en Android</figcaption>
+</figure>
+</section><section id="imageview" class="slide level2">
+<h2><span class="header-section-number">9.2</span> ImageView</h2>
+<ul>
+<li>Permite mostrar imágenes en la aplicación.</li>
+<li>Propiedades:
+<ul>
+<li><strong>android:src</strong> indica la imagen a mostrar,</li>
+<li><strong>android:maxWidth</strong> indica el ancho máximo,</li>
+<li><strong>android:maxHeight</strong> indica la altura máxima,</li>
+<li>etc.</li>
+</ul></li>
+<li>Se puede cambiar la imagen mediante código:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> ImageView foto = (ImageView)<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Foto</span>);
+foto.<span class="fu">setImageResource</span>(R.<span class="fu">drawable</span>.<span class="fu">otra_foto</span>);</code></pre>
+</section><section id="ejemplo-imageview" class="slide level2">
+<h2><span class="header-section-number">9.3</span> Ejemplo ImageView</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;ImageView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Foto&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:src=</span><span class="st">&quot;@drawable/foto&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="textview" class="slide level2">
+<h2><span class="header-section-number">9.4</span> TextView</h2>
+<ul>
+<li>Se utiliza para mostrar un texto al usuario, mediante propiedad <strong>android:text</strong>.</li>
+<li>Otras propiedades:
+<ul>
+<li><strong>android:background</strong> (color de fondo),</li>
+<li><strong>android:textColor</strong> (color del texto),</li>
+<li><strong>android:textSize</strong> (tamaño de la fuente),</li>
+<li><strong>android:textStyle</strong> (estilo del texto: normal, negrita, cursiva),</li>
+<li><strong>android:typeface</strong> (tipo de letra: normal, sans, serif, monospace),</li>
+<li>etc.</li>
+</ul></li>
+<li>También se puede cambiar el texto mediante código:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> TextView label = (TextView)<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Label</span>);
+label.<span class="fu">setText</span>(texto);</code></pre>
+</section><section id="ejemplo-textview" class="slide level2">
+<h2><span class="header-section-number">9.5</span> Ejemplo TextView</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;TextView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Label&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">  android:layout_below=</span><span class="st">&quot;@id/Icon&quot;</span>
+<span class="ot">  android:text=</span><span class="st">&quot;@string/write&quot;</span>
+<span class="ot">  android:textSize=</span><span class="st">&quot;20dp&quot;</span>
+<span class="ot">  android:textColor=</span><span class="st">&quot;#FFFFFF&quot;</span>
+<span class="ot">  android:textStyle=</span><span class="st">&quot;bold&quot;</span>
+<span class="ot">  android:background=</span><span class="st">&quot;#97C03D&quot;</span>
+<span class="ot">  android:typeface=</span><span class="st">&quot;monospace&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="edittext" class="slide level2">
+<h2><span class="header-section-number">9.6</span> EditText</h2>
+<ul>
+<li>Permite la introducción y edición de texto por parte del usuario.</li>
+<li>El texto a mostrar por defecto en la caja de texto se establece en la propiedad <strong>android:text</strong>.</li>
+<li>También se puede cambiar el texto mediante código:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> EditText cuadroTexto = (EditText)<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Label</span>);
+cuadroTexto.<span class="fu">setText</span>(texto);</code></pre>
+</section><section id="ejemplo-edittext" class="slide level2">
+<h2><span class="header-section-number">9.7</span> Ejemplo EditText</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;EditText</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/TextBox&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">  android:layout_below=</span><span class="st">&quot;@id/Label&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="spanned-spannable-y-editable" class="slide level2">
+<h2><span class="header-section-number">9.8</span> Spanned, Spannable y Editable</h2>
+<ul>
+<li>Un <strong>Spanned</strong> es una cadena de caracteres a la que podemos insertar otros objetos a modo de marcas o etiquetas (spans) asociados a rangos de caracteres.</li>
+<li>La interfaz <strong>Spannable</strong>, hereda de Spanned, y permite la modificación de esas marcas.</li>
+<li>La interfaz <strong>Editable</strong>, hereda de Spannable, y permite además la modificación del texto.</li>
+</ul>
+</section><section id="spans" class="slide level2">
+<h2><span class="header-section-number">9.9</span> Spans</h2>
+<ul>
+<li>Existen muchos tipos de <strong>spans</strong> predefinidos, entre otros:
+<ul>
+<li>TypefaceSpan. Modifica el tipo de letra (normal, sans, serif, monospace).</li>
+<li>StyleSpan. Modifica el estilo del texto (normal, negrita, cursiva).</li>
+<li>ForegroudColorSpan. Modifica el color del texto.</li>
+<li>AbsoluteSizeSpan. Modifica el tamaño de fuente.</li>
+</ul></li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// Creamos un texto con parte en negrita</span>
+<span class="dt">final</span> Editable texto = Editable.<span class="fu">Factory</span>.<span class="fu">getInstance</span>().<span class="fu">newEditable</span>(<span class="st">&quot;Esto es un simulacro.&quot;</span>);
+texto.<span class="fu">setSpan</span>(<span class="kw">new</span> <span class="fu">StyleSpan</span>(Typeface.<span class="fu">BOLD</span>), <span class="dv">11</span>, <span class="dv">20</span>, Spanned.<span class="fu">SPAN_EXCLUSIVE_EXCLUSIVE</span>);
+textBox.<span class="fu">setText</span>(texto);</code></pre>
+</section><section id="la-clase-html" class="slide level2">
+<h2><span class="header-section-number">9.10</span> La clase Html</h2>
+<ul>
+<li>Muestra el texto con etiquetas de formato HTML:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> String html = Html.<span class="fu">toHtml</span>(textBox.<span class="fu">getText</span>());</code></pre>
+<ul>
+<li>Asignar texto con formato HTML (sólo funciona con las etiquetas básicas):</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">textBox.<span class="fu">setText</span>(Html.<span class="fu">fromHtml</span>(<span class="st">&quot;Otro &lt;b&gt;texto&lt;/b&gt; de ejemplo.&quot;</span>), BufferType.<span class="fu">SPANNABLE</span>);</code></pre>
+</section>
+<section id="checkboxs-y-radiobuttons" class="titleslide slide level1"><h1><span class="header-section-number">10</span> CheckBoxs y RadioButtons</h1></section><section id="checkbox" class="slide level2">
+<h2><span class="header-section-number">10.1</span> CheckBox</h2>
+<ul>
+<li>Se suele utilizar para marcar o desmarcar opciones en una aplicación.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;CheckBox</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/ChkMarcame&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+    android:text=&quot;Már<span class="er">came!&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<figure>
+<img src="../img/pantalla-check-box.png" alt="CheckBox" /><figcaption>CheckBox</figcaption>
+</figure>
+</section><section id="métodos-checkbox" class="slide level2">
+<h2><span class="header-section-number">10.2</span> Métodos CheckBox</h2>
+<ul>
+<li>Podremos hacer uso de los métodos:
+<ul>
+<li><strong>isChecked()</strong> para conocer el estado del control, y</li>
+<li><strong>setChecked(estado)</strong> para establecer un estado concreto para el control.</li>
+</ul></li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">if</span> (checkBox.<span class="fu">isChecked</span>()) {
+    checkBox.<span class="fu">setChecked</span>(<span class="kw">false</span>);
+}</code></pre>
+</section><section id="eventos-checkbox" class="slide level2">
+<h2><span class="header-section-number">10.3</span> Eventos CheckBox</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> CheckBox cb = (CheckBox) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">ChkMarcame</span>);
+
+cb.<span class="fu">setOnCheckedChangeListener</span>(<span class="kw">new</span> CheckBox.<span class="fu">OnCheckedChangeListener</span>() {
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCheckedChanged</span>(CompoundButton buttonView, <span class="dt">boolean</span> isChecked) {
+    <span class="kw">if</span> (isChecked) {
+        cb.<span class="fu">setText</span>(<span class="st">&quot;Checkbox marcado!&quot;</span>);
+    }
+    <span class="kw">else</span> {
+        cb.<span class="fu">setText</span>(<span class="st">&quot;Checkbox desmarcado!&quot;</span>);
+    }
+  }
+});</code></pre>
+</section><section id="radiobutton" class="slide level2">
+<h2><span class="header-section-number">10.4</span> RadioButton</h2>
+<ul>
+<li>Puede estar marcado o desmarcado.</li>
+<li>Se utilizan dentro de un <strong>RadioGroup</strong> donde sólo una puede estar marcada.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;RadioGroup</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/gruporb&quot;</span><span class="ot"> android:orientation=</span><span class="st">&quot;vertical&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span><span class="ot">  android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span> <span class="kw">&gt;</span>
+
+  <span class="er">&lt;</span>RadioButton android:id=&quot;@+id/radio1&quot; android:text=&quot;Opción 1&quot;
+    android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; /&gt;
+
+  <span class="er">&lt;</span>RadioButton android:id=&quot;@+id/radio2&quot; android:text=&quot;Opción 2&quot;
+    android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; /&gt;
+
+<span class="kw">&lt;/RadioGroup&gt;</span></code></pre>
+<figure>
+<img src="../img/pantalla-radio-button.png" alt="RadioButton" /><figcaption>RadioButton</figcaption>
+</figure>
+</section><section id="métodos-radiogroup" class="slide level2">
+<h2><span class="header-section-number">10.5</span> Métodos RadioGroup</h2>
+<ul>
+<li>Los más importantes:
+<ul>
+<li><strong>check(id)</strong> para marcar una opción determinada mediante su ID,</li>
+<li><strong>clearCheck()</strong> para desmarcar todas las opciones, y</li>
+<li><strong>getCheckedRadioButtonId()</strong> que devolverá el ID de la opción marcada (o el valor -1 si no hay ninguna marcada).</li>
+</ul></li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> RadioGroup rg = (RadioGroup) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">gruporb</span>);
+rg.<span class="fu">clearCheck</span>();
+rg.<span class="fu">check</span>(R.<span class="fu">id</span>.<span class="fu">radio1</span>);
+<span class="dt">int</span> idSeleccionado = rg.<span class="fu">getCheckedRadioButtonId</span>();</code></pre>
+</section><section id="eventos-radiogroup" class="slide level2">
+<h2><span class="header-section-number">10.6</span> Eventos RadioGroup</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> RadioGroup rg = (RadioGroup) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">gruporb</span>);
+
+rg.<span class="fu">setOnCheckedChangeListener</span>(<span class="kw">new</span> RadioGroup.<span class="fu">OnCheckedChangeListener</span>() {
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCheckedChanged</span>(RadioGroup group, <span class="dt">int</span> checkedId) {
+    lblMensaje.<span class="fu">setText</span>(<span class="st">&quot;ID opcion seleccionada: &quot;</span> + checkedId);
+  }
+});</code></pre>
+</section>
+<section id="listas" class="titleslide slide level1"><h1><span class="header-section-number">11</span> Listas</h1></section><section id="adapters" class="slide level2">
+<h2><span class="header-section-number">11.1</span> Adapters</h2>
+<ul>
+<li>Necesarios para renderizar los items de las listas.</li>
+<li>Aunque podemos creer los nuestros propios, existen adaptadores sencillos:
+<ul>
+<li><strong>ArrayAdapter</strong>: El más sencillo. Utiliza array de objetos.</li>
+<li><strong>SimpleAdapter</strong>: Para mapear datos sobre los controles de un fichero XML de layout.</li>
+<li><strong>SimpleCursorAdapter</strong>: Para mapear las columnas de un cursor sobre elementos visuales.</li>
+</ul></li>
+</ul>
+</section><section id="spinner" class="slide level2">
+<h2><span class="header-section-number">11.2</span> Spinner</h2>
+<ul>
+<li>Son listas desplegables.</li>
+</ul>
+<figure>
+<img src="../img/pantalla-spinner.png" alt="Spinner" /><figcaption>Spinner</figcaption>
+</figure>
+</section><section id="código-spinner" class="slide level2">
+<h2><span class="header-section-number">11.3</span> Código Spinner</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;Spinner</span>
+<span class="ot">  android:id=</span><span class="st">&quot;@+id/CmbOpciones&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> String[] datos = <span class="kw">new</span> String[]{<span class="st">&quot;Elem1&quot;</span>,<span class="st">&quot;Elem2&quot;</span>,<span class="st">&quot;Elem3&quot;</span>,<span class="st">&quot;Elem4&quot;</span>,<span class="st">&quot;Elem5&quot;</span>};
+
+<span class="dt">final</span> Spinner cmbOpciones = (Spinner) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">CmbOpciones</span>);
+
+ArrayAdapter&lt;String&gt; adaptador = <span class="kw">new</span> ArrayAdapter&lt;String&gt;(
+  context,
+  android.<span class="fu">R</span>.<span class="fu">layout</span>.<span class="fu">simple_spinner_item</span>,
+  datos);
+
+<span class="co">// para indicar como mostrar la lista de elementos</span>
+adaptador.<span class="fu">setDropDownViewResource</span>(android.<span class="fu">R</span>.<span class="fu">layout</span>.<span class="fu">simple_spinner_dropdown_item</span>);
+
+cmbOpciones.<span class="fu">setAdapter</span>(adaptador);</code></pre>
+</section><section id="eventos-spinner" class="slide level2">
+<h2><span class="header-section-number">11.4</span> Eventos Spinner</h2>
+<pre class="sourceCode java"><code class="sourceCode java">cmbOpciones.<span class="fu">setOnItemSelectedListener</span>(<span class="kw">new</span> <span class="fu">OnItemSelectedListener</span>() {
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onItemSelected</span>(
+    AdapterView&lt;?&gt; parent, View view, <span class="dt">int</span> position, <span class="dt">long</span> id) {
+      lblMensaje.<span class="fu">setText</span>(<span class="st">&quot;Seleccionado: &quot;</span> + datos[position]);
+  }
+
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onNothingSelected</span>(AdapterView&lt;?&gt; parent) {
+      lblMensaje.<span class="fu">setText</span>(<span class="st">&quot;&quot;</span>);
+  }
+});</code></pre>
+</section><section id="listview" class="slide level2">
+<h2><span class="header-section-number">11.5</span> ListView</h2>
+<ul>
+<li>Muestra una lista seleccionable:</li>
+</ul>
+<figure>
+<img src="../img/pantalla-list-view-01.png" alt="ListView" /><figcaption>ListView</figcaption>
+</figure>
+</section><section id="código-listview" class="slide level2">
+<h2><span class="header-section-number">11.6</span> Código ListView</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;ListView</span>
+<span class="ot">  android:id=</span><span class="st">&quot;@+id/LstOpciones&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> String[] datos = <span class="kw">new</span> String[]{<span class="st">&quot;Elem1&quot;</span>,<span class="st">&quot;Elem2&quot;</span>,<span class="st">&quot;Elem3&quot;</span>,<span class="st">&quot;Elem4&quot;</span>,<span class="st">&quot;Elem5&quot;</span>};
+
+ArrayAdapter&lt;String&gt; adaptador = <span class="kw">new</span> ArrayAdapter&lt;String&gt;(
+  context,
+  android.<span class="fu">R</span>.<span class="fu">layout</span>.<span class="fu">simple_list_item_1</span>,
+  datos);
+
+ListView lstOpciones = (ListView)<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">LstOpciones</span>);
+
+lstOpciones.<span class="fu">setAdapter</span>(adaptador);</code></pre>
+</section><section id="eventos-listview" class="slide level2">
+<h2><span class="header-section-number">11.7</span> Eventos ListView</h2>
+<pre class="sourceCode java"><code class="sourceCode java">lstOpciones.<span class="fu">setOnItemClickListener</span>(<span class="kw">new</span> <span class="fu">OnItemClickListener</span>() {
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onItemClick</span>(
+      AdapterView&lt;?&gt; parent, View view, <span class="dt">int</span> position, <span class="dt">long</span> id) {
+        <span class="co">//Acciones necesarias al hacer click</span>
+    }
+});</code></pre>
+</section><section id="datos-complejos" class="slide level2">
+<h2><span class="header-section-number">11.8</span> Datos complejos</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Titular {
+
+    <span class="kw">private</span> String titulo;
+    <span class="kw">private</span> String subtitulo;
+
+    <span class="co">// constructor y getters</span>
+}</code></pre>
+<figure>
+<img src="../img/pantalla-list-view-02.png" alt="Datos complejos en una lista" /><figcaption>Datos complejos en una lista</figcaption>
+</figure>
+</section><section id="item-layout-personalizado" class="slide level2">
+<h2><span class="header-section-number">11.9</span> Item Layout personalizado</h2>
+<ul>
+<li>/res/layout/listitem-titular.xml</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+
+<span class="kw">&lt;LinearLayout</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span><span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">  android:orientation=</span><span class="st">&quot;vertical&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;TextView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Titulo&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span><span class="ot"> android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:textStyle=</span><span class="st">&quot;bold&quot;</span><span class="ot">           android:textSize=</span><span class="st">&quot;20dp&quot;</span> <span class="kw">/&gt;</span>
+
+  <span class="kw">&lt;TextView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/Subtitulo&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span><span class="ot"> android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:textStyle=</span><span class="st">&quot;normal&quot;</span><span class="ot">         android:textSize=</span><span class="st">&quot;12dp&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/LinearLayout&gt;</span></code></pre>
+</section><section id="adaptador-personalizado" class="slide level2">
+<h2><span class="header-section-number">11.10</span> Adaptador personalizado</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> TitularesAdapter <span class="kw">extends</span> ArrayAdapter&lt;Titular&gt; {
+
+  <span class="kw">public</span> View <span class="fu">getView</span>(<span class="dt">final</span> <span class="dt">int</span> position, <span class="dt">final</span> View listItem, <span class="dt">final</span> ViewGroup parent) {
+
+    <span class="co">// recojemos el titular para esa posición</span>
+    <span class="dt">final</span> Titular titular = <span class="kw">this</span>.<span class="fu">getItem</span>(position);
+
+    <span class="co">// inflamos la vista desde el xml</span>
+    <span class="dt">final</span> Activity context = (Activity) <span class="kw">this</span>.<span class="fu">getContext</span>();
+    listItem = context.<span class="fu">getLayoutInflater</span>().<span class="fu">inflate</span>(R.<span class="fu">layout</span>.<span class="fu">listitem_titular</span>, <span class="kw">null</span>);
+
+    <span class="co">// cogemos los elementos de la vista</span>
+    <span class="dt">final</span> TextView titulo = (TextView) listItem.<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Titulo</span>);
+    <span class="dt">final</span> TextView subtitulo = (TextView) listItem.<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Subtitulo</span>);
+
+    <span class="co">// modificamos los textos de la vista (el titulo y el el subtitulo)</span>
+    titulo.<span class="fu">setText</span>(titular.<span class="fu">getTitulo</span>());
+    subtitulo.<span class="fu">setText</span>(titular.<span class="fu">getSubtitulo</span>());
+
+    <span class="kw">return</span> listItem;
+  }
+}</code></pre>
+</section><section id="código-listview-personalizado" class="slide level2">
+<h2><span class="header-section-number">11.11</span> Código ListView personalizado</h2>
+<pre class="sourceCode java"><code class="sourceCode java">Titular[] datos = <span class="kw">new</span> Titular[]{
+  <span class="kw">new</span> Titular(<span class="st">&quot;Título 1&quot;</span>, <span class="st">&quot;Subtítulo largo 1&quot;</span>),
+  <span class="kw">new</span> Titular(<span class="st">&quot;Título 2&quot;</span>, <span class="st">&quot;Subtítulo largo 2&quot;</span>),
+  <span class="kw">new</span> Titular(<span class="st">&quot;Título 3&quot;</span>, <span class="st">&quot;Subtítulo largo 3&quot;</span>),
+  <span class="kw">new</span> Titular(<span class="st">&quot;Título 4&quot;</span>, <span class="st">&quot;Subtítulo largo 4&quot;</span>),
+  <span class="kw">new</span> Titular(<span class="st">&quot;Título 5&quot;</span>, <span class="st">&quot;Subtítulo largo 5&quot;</span>)};
+
+AdaptadorTitulares adaptador = <span class="kw">new</span> <span class="fu">AdaptadorTitulares</span>(<span class="kw">this</span>, datos);
+
+ListView lstOpciones = (ListView)<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">LstOpciones</span>);
+
+lstOpciones.<span class="fu">setAdapter</span>(adaptador);</code></pre>
+</section><section id="gridview" class="slide level2">
+<h2><span class="header-section-number">11.12</span> GridView</h2>
+<ul>
+<li>Muestra opciones divididas en filas y columnas.</li>
+</ul>
+<figure>
+<img src="../img/pantalla-grid-view.png" alt="GridView" /><figcaption>GridView</figcaption>
+</figure>
+</section><section id="código-gridview" class="slide level2">
+<h2><span class="header-section-number">11.13</span> Código GridView</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;GridView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/GridOpciones&quot;</span><span class="ot"> android:stretchMode=</span><span class="st">&quot;columnWidth&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span><span class="ot">     android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:numColumns=</span><span class="st">&quot;auto_fit&quot;</span><span class="ot">          android:columnWidth=</span><span class="st">&quot;80dp&quot;</span>
+<span class="ot">  android:horizontalSpacing=</span><span class="st">&quot;5dp&quot;</span><span class="ot">        android:verticalSpacing=</span><span class="st">&quot;10dp&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java">ArrayAdapter&lt;String&gt; adaptador = <span class="kw">new</span> ArrayAdapter&lt;String&gt;(
+  context,
+  android.<span class="fu">R</span>.<span class="fu">layout</span>.<span class="fu">simple_list_item_1</span>,
+  datos);
+
+<span class="dt">final</span> GridView grdOpciones = (GridView)<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">GridOpciones</span>);
+
+grdOpciones.<span class="fu">setAdapter</span>(adaptador);</code></pre>
+</section><section id="eventos-gridview" class="slide level2">
+<h2><span class="header-section-number">11.14</span> Eventos GridView</h2>
+<pre class="sourceCode java"><code class="sourceCode java">grdOpciones.<span class="fu">setOnItemSelectedListener</span>(<span class="kw">new</span> <span class="fu">OnItemSelectedListener</span>() {
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onItemSelected</span>(
+    AdapterView&lt;?&gt; parent, View view, <span class="dt">int</span> position, <span class="dt">long</span> id) {
+      lblMensaje.<span class="fu">setText</span>(<span class="st">&quot;Seleccionado: &quot;</span> + datos[position]);
+  }
+
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onNothingSelected</span>(AdapterView&lt;?&gt; parent) {
+      lblMensaje.<span class="fu">setText</span>(<span class="st">&quot;&quot;</span>);
+  }
+});</code></pre>
+</section>
+<section id="menús" class="titleslide slide level1"><h1><span class="header-section-number">12</span> Menús</h1></section><section id="menú-normal" class="slide level2">
+<h2><span class="header-section-number">12.1</span> Menú normal</h2>
+<figure>
+<img src="../img/pantalla-menus-01.png" alt="Menú normal" /><figcaption>Menú normal</figcaption>
+</figure>
+</section><section id="código" class="slide level2">
+<h2><span class="header-section-number">12.2</span> Código</h2>
+<ul>
+<li>Se puede hacer (como todas las vistas) por código o mediante XML:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;menu</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="kw">&gt;</span>
+  <span class="er">&lt;</span>item android:id=&quot;@+id/Menu1&quot; android:title=&quot;Menú 1&quot; android:icon=&quot;@drawable/tag&quot;&gt;<span class="kw">&lt;/item&gt;</span>
+  <span class="er">&lt;</span>item android:id=&quot;@+id/Menu2&quot; android:title=&quot;Menú 2&quot; android:icon=&quot;@drawable/filter&quot;&gt;<span class="er">&lt;</span>/item&gt;
+  <span class="er">&lt;</span>item android:id=&quot;@+id/Menu3&quot; android:title=&quot;Menú 3&quot; android:icon=&quot;@drawable/chart&quot;&gt;
+    <span class="kw">&lt;menu&gt;</span>
+      <span class="er">&lt;</span>item android:id=&quot;@+id/Submenu31&quot; android:title=&quot;Submenú 3.1&quot; /&gt;
+      <span class="er">&lt;</span>item android:id=&quot;@+id/Submenu32&quot; android:title=&quot;Submenú 3.2&quot; /&gt;
+    <span class="kw">&lt;/menu&gt;</span>
+  <span class="er">&lt;</span>/item&gt;
+<span class="er">&lt;</span>/menu&gt;</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">onCreateOptionsMenu</span>(Menu menu) {
+  <span class="dt">final</span> MenuInflater inflater = <span class="fu">getMenuInflater</span>();
+  inflater.<span class="fu">inflate</span>(R.<span class="fu">menu</span>.<span class="fu">menu_principal</span>, menu);
+  <span class="kw">return</span> <span class="kw">true</span>;
+}</code></pre>
+</section><section id="evento-de-menú" class="slide level2">
+<h2><span class="header-section-number">12.3</span> Evento de menú</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">onOptionsItemSelected</span>(<span class="dt">final</span> MenuItem item) {
+  <span class="kw">switch</span> (item.<span class="fu">getItemId</span>()) {
+    <span class="kw">case</span> R.<span class="fu">id</span>.<span class="fu">Menu1</span>:
+      <span class="kw">this</span>.mensaje.setText(<span class="st">&quot;Menú 1 pulsado!&quot;</span>);
+      <span class="kw">return</span> <span class="kw">true</span>;
+    <span class="kw">case</span> R.<span class="fu">id</span>.<span class="fu">Menu2</span>:
+      <span class="kw">this</span>.mensaje.setText(<span class="st">&quot;Menú 2 pulsado!&quot;</span>);
+      <span class="kw">return</span> <span class="kw">true</span>;
+    <span class="kw">case</span> R.<span class="fu">id</span>.<span class="fu">Menu3</span>:
+      <span class="kw">this</span>.mensaje.setText(<span class="st">&quot;Menú 3 pulsado!&quot;</span>);
+      <span class="kw">return</span> <span class="kw">true</span>;
+    <span class="kw">case</span> R.<span class="fu">id</span>.<span class="fu">Submenu31</span>:
+      <span class="kw">this</span>.mensaje.setText(<span class="st">&quot;Submenú 3.1 pulsado!&quot;</span>);
+      <span class="kw">return</span> <span class="kw">true</span>;
+    <span class="kw">case</span> R.<span class="fu">id</span>.<span class="fu">Submenu32</span>:
+      <span class="kw">this</span>.mensaje.setText(<span class="st">&quot;Submenú 3.2 pulsado!&quot;</span>);
+      <span class="kw">return</span> <span class="kw">true</span>;
+    <span class="kw">default</span>:
+      <span class="kw">return</span> <span class="kw">super</span>.<span class="fu">onOptionsItemSelected</span>(item);
+  }
+}</code></pre>
+</section><section id="menú-contextual" class="slide level2">
+<h2><span class="header-section-number">12.4</span> Menú contextual</h2>
+<figure>
+<img src="../img/pantalla-menus-03.png" alt="Menú contextual" /><figcaption>Menú contextual</figcaption>
+</figure>
+</section><section id="layout-menú-contextual" class="slide level2">
+<h2><span class="header-section-number">12.5</span> Layout menú contextual</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;menu</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="kw">&gt;</span>
+  <span class="er">&lt;</span>item android:id=&quot;@+id/OpcionLista1&quot; android:title=&quot;Opción Lista 1&quot; /&gt;
+  <span class="er">&lt;</span>item android:id=&quot;@+id/OpcionLista2&quot; android:title=&quot;Opción Lista 2&quot; /&gt;
+<span class="kw">&lt;/menu&gt;</span></code></pre>
+</section><section id="asociar-menú-contextual" class="slide level2">
+<h2><span class="header-section-number">12.6</span> Asociar menú contextual</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCreate</span>(<span class="dt">final</span> Bundle savedInstanceState) {
+  <span class="kw">super</span>.<span class="fu">onCreate</span>(savedInstanceState);
+  <span class="kw">this</span>.<span class="fu">setContentView</span>(R.<span class="fu">layout</span>.<span class="fu">main</span>);
+
+  <span class="co">// Obtenemos las referencias a los controles</span>
+  <span class="kw">this</span>.<span class="fu">lista</span> = (ListView) <span class="kw">this</span>.<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">Lista</span>);
+
+  ...
+
+  <span class="co">// Asociamos los menús contextuales a los controles</span>
+  <span class="kw">this</span>.<span class="fu">registerForContextMenu</span>(<span class="kw">this</span>.<span class="fu">lista</span>);
+}</code></pre>
+</section><section id="crear-menú-contextual" class="slide level2">
+<h2><span class="header-section-number">12.7</span> Crear menú contextual</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCreateContextMenu</span>(ContextMenu menu, View view, ContextMenuInfo menuInfo) {
+  <span class="kw">super</span>.<span class="fu">onCreateContextMenu</span>(menu, view, menuInfo);
+
+  <span class="dt">final</span> AdapterContextMenuInfo info = (AdapterContextMenuInfo) menuInfo;
+
+  menu.<span class="fu">setHeaderTitle</span>(<span class="kw">this</span>.<span class="fu">lista</span>.<span class="fu">getAdapter</span>().<span class="fu">getItem</span>(info.<span class="fu">position</span>).<span class="fu">toString</span>());
+
+  <span class="dt">final</span> MenuInflater inflater = <span class="kw">this</span>.<span class="fu">getMenuInflater</span>();
+
+  inflater.<span class="fu">inflate</span>(R.<span class="fu">menu</span>.<span class="fu">menu_contextual_lista</span>, menu);
+}</code></pre>
+</section><section id="evento-menú-contextual" class="slide level2">
+<h2><span class="header-section-number">12.8</span> Evento menú contextual</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">onContextItemSelected</span>(<span class="dt">final</span> MenuItem item) {
+
+  <span class="dt">final</span> AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.<span class="fu">getMenuInfo</span>();
+
+  <span class="kw">switch</span> (item.<span class="fu">getItemId</span>()) {
+    <span class="kw">case</span> R.<span class="fu">id</span>.<span class="fu">OpcionLista1</span>:
+      <span class="kw">this</span>.<span class="fu">mensaje</span>.<span class="fu">setText</span>(<span class="st">&quot;Lista[&quot;</span> + info.<span class="fu">position</span> + <span class="st">&quot;]: Opcion 1 pulsada!&quot;</span>);
+      <span class="kw">return</span> <span class="kw">true</span>;
+    <span class="kw">case</span> R.<span class="fu">id</span>.<span class="fu">OpcionLista2</span>:
+      <span class="kw">this</span>.<span class="fu">mensaje</span>.<span class="fu">setText</span>(<span class="st">&quot;Lista[&quot;</span> + info.<span class="fu">position</span> + <span class="st">&quot;]: Opcion 2 pulsada!&quot;</span>);
+      <span class="kw">return</span> <span class="kw">true</span>;
+    <span class="kw">default</span>:
+      <span class="kw">return</span> <span class="kw">super</span>.<span class="fu">onContextItemSelected</span>(item);
+  }
+}</code></pre>
+</section>
+<section id="diálogos" class="titleslide slide level1"><h1><span class="header-section-number">13</span> Diálogos</h1></section><section id="alertdialog" class="slide level2">
+<h2><span class="header-section-number">13.1</span> AlertDialog</h2>
+<ul>
+<li>Muestra un mensaje pidiendo confirmación al usuario para continuar.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> AlertDialog.<span class="fu">Builder</span> alert = <span class="kw">new</span> AlertDialog.<span class="fu">Builder</span>(context);
+alert.<span class="fu">setTitle</span>(<span class="st">&quot;Alerta!&quot;</span>);
+alert.<span class="fu">setMessage</span>(<span class="st">&quot;Este es el texto de la alerta&quot;</span>);
+alert.<span class="fu">setIcon</span>(R.<span class="fu">drawable</span>.<span class="fu">icon</span>);
+alert.<span class="fu">setPositiveButton</span>(android.<span class="fu">R</span>.<span class="fu">string</span>.<span class="fu">ok</span>, <span class="kw">null</span>);
+alert.<span class="fu">show</span>();</code></pre>
+<figure>
+<img src="../img/pantalla-alerta.png" alt="AlertDialog" /><figcaption>AlertDialog</figcaption>
+</figure>
+</section><section id="toast" class="slide level2">
+<h2><span class="header-section-number">13.2</span> Toast</h2>
+<ul>
+<li>Mensaje que se muestra en pantalla durante unos segundos al usuario.</li>
+<li>No deberían utilizarse para hacer notificaciones demasiado importantes.</li>
+<li>La clase Toast dispone de los siguientes métodos:
+<ul>
+<li><strong>makeText(contexto, texto, duracion)</strong> con duración LENGTH_LONG o LENGTH_SHORT</li>
+<li><strong>show()</strong> para mostrarlo</li>
+<li><strong>setGravity()</strong> con los valores CENTER, LEFT, RIGHT, TOP, BOTTOM</li>
+<li><strong>setDuration(duracion)</strong> con duración LENGTH_LONG o LENGTH_SHORT</li>
+<li><strong>setView(layout)</strong> para personalizarlo con un layout.</li>
+</ul></li>
+</ul>
+</section><section id="toast-por-defecto" class="slide level2">
+<h2><span class="header-section-number">13.3</span> Toast por defecto</h2>
+<pre class="sourceCode java"><code class="sourceCode java">Toast toast = Toast.<span class="fu">makeText</span>(
+  <span class="fu">getApplicationContext</span>(), <span class="st">&quot;Toast por defecto&quot;</span>, Toast.<span class="fu">LENGTH_SHORT</span>);
+toast.<span class="fu">show</span>();</code></pre>
+<figure>
+<img src="../img/pantalla-toast-defecto.png" alt="Toast por defecto" /><figcaption>Toast por defecto</figcaption>
+</figure>
+</section><section id="toast-con-gravity" class="slide level2">
+<h2><span class="header-section-number">13.4</span> Toast con gravity</h2>
+<pre class="sourceCode java"><code class="sourceCode java">Toast toast = Toast.<span class="fu">makeText</span>(
+  <span class="fu">getApplicationContext</span>(), <span class="st">&quot;Toast por defecto&quot;</span>, Toast.<span class="fu">LENGTH_SHORT</span>);
+toast.<span class="fu">setGravity</span>(Gravity.<span class="fu">LEFT</span>,<span class="dv">0</span>,<span class="dv">0</span>);
+toast.<span class="fu">show</span>();</code></pre>
+<figure>
+<img src="../img/pantalla-toast-gravity.png" alt="Toast con gravity" /><figcaption>Toast con gravity</figcaption>
+</figure>
+</section><section id="toast-personalizado-i" class="slide level2">
+<h2><span class="header-section-number">13.5</span> Toast personalizado (I)</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;LinearLayout</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  android:id=</span><span class="st">&quot;@+id/lytLayout&quot;</span><span class="ot">            android:orientation=</span><span class="st">&quot;horizontal&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span><span class="ot">     android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:background=</span><span class="st">&quot;#555555&quot;</span><span class="ot">           android:padding=</span><span class="st">&quot;5dp&quot;</span> <span class="kw">&gt;</span>
+
+  <span class="kw">&lt;ImageView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/imgIcono&quot;</span><span class="ot">  android:src=</span><span class="st">&quot;@drawable/marcador&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span><span class="ot"> android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span> <span class="kw">/&gt;</span>
+
+  <span class="kw">&lt;TextView</span><span class="ot"> android:id=</span><span class="st">&quot;@+id/txtMensaje&quot;</span><span class="ot"> android:layout_gravity=</span><span class="st">&quot;center_vertical&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span><span class="ot">  android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span>
+<span class="ot">    android:textColor=</span><span class="st">&quot;#FFFFFF&quot;</span><span class="ot">          android:paddingLeft=</span><span class="st">&quot;10dp&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/LinearLayout&gt;</span></code></pre>
+</section><section id="toast-personalizado-ii" class="slide level2">
+<h2><span class="header-section-number">13.6</span> Toast personalizado (II)</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// inflamos el layout</span>
+LayoutInflater inflater = <span class="fu">getLayoutInflater</span>();
+View layout = inflater.<span class="fu">inflate</span>(
+  R.<span class="fu">layout</span>.<span class="fu">toast_layout</span>, (ViewGroup) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">lytLayout</span>));
+
+<span class="co">// cogemos el campo de texto del layout inflado y ponemos el texto</span>
+TextView txtMsg = (TextView) layout.<span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">txtMensaje</span>);
+txtMsg.<span class="fu">setText</span>(<span class="st">&quot;Toast Personalizado&quot;</span>);
+
+<span class="co">// nos creamos el toast, lo configuramos y lo mostramos</span>
+Toast toast = <span class="kw">new</span> <span class="fu">Toast</span>(<span class="fu">getApplicationContext</span>());
+toast.<span class="fu">setDuration</span>(Toast.<span class="fu">LENGTH_SHORT</span>);
+toast.<span class="fu">setView</span>(layout);
+toast.<span class="fu">show</span>();</code></pre>
+</section><section id="toast-personalizado-iii" class="slide level2">
+<h2><span class="header-section-number">13.7</span> Toast personalizado (III)</h2>
+<figure>
+<img src="../img/pantalla-toast-personalizado.png" alt="Toast personalizado" /><figcaption>Toast personalizado</figcaption>
+</figure>
+</section><section id="notificación-en-la-barra-de-estado" class="slide level2">
+<h2><span class="header-section-number">13.8</span> Notificación en la barra de estado</h2>
+<ul>
+<li>Aparece un icono en la <strong>barra de estado</strong>.</li>
+<li>Pinchando y arrastrando la barra de estado hacia abajo podemos ver los textos de las notificaciones.</li>
+<li>Suele usarse con servicios.</li>
+</ul>
+</section><section id="notificación-simple" class="slide level2">
+<h2><span class="header-section-number">13.9</span> Notificación simple</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> Notification notification = <span class="kw">new</span> Notification(
+  R.<span class="fu">drawable</span>.<span class="fu">icon</span>, <span class="st">&quot;Texto barra de estado&quot;</span>, System.<span class="fu">currentTimeMillis</span>());
+
+<span class="dt">final</span> Intent notificationIntent = <span class="kw">new</span> <span class="fu">Intent</span>(<span class="kw">this</span>, MyClass.<span class="fu">class</span>);
+<span class="dt">final</span> PendingIntent contentIntent = PendingIntent.<span class="fu">getActivity</span>(<span class="kw">this</span>, <span class="dv">0</span>, notificationIntent, <span class="dv">0</span>);
+
+notification.setLatestEventInfo(context, <span class="st">&quot;Título&quot;</span>, <span class="st">&quot;Texto del mensaje&quot;</span>,  contentIntent);
+
+<span class="dt">final</span> NotificationManager notificationManager =
+  (NotificationManager) context.<span class="fu">getSystemService</span>(Context.<span class="fu">NOTIFICATION_SERVICE</span>);
+notificationManager.<span class="fu">notify</span>(ID_NOTIFICACION, notification);</code></pre>
+</section><section id="pantalla-notificación-simple" class="slide level2">
+<h2><span class="header-section-number">13.10</span> Pantalla notificación simple</h2>
+<figure>
+<img src="../img/pantalla-statusbar-simple-02.png" alt="Notificación simple" /><figcaption>Notificación simple</figcaption>
+</figure>
+</section><section id="notificación-personalizada" class="slide level2">
+<h2><span class="header-section-number">13.11</span> Notificación personalizada</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> Notification notification = <span class="kw">new</span> Notification(
+  R.<span class="fu">drawable</span>.<span class="fu">icon</span>, <span class="st">&quot;Texto barra de estado&quot;</span>, System.<span class="fu">currentTimeMillis</span>());
+
+<span class="dt">final</span> RemoteViews contentView = <span class="kw">new</span> <span class="fu">RemoteViews</span>(<span class="kw">this</span>.<span class="fu">getPackageName</span>(), R.<span class="fu">layout</span>.<span class="fu">layout</span>);
+contentView.<span class="fu">setImageViewResource</span>(R.<span class="fu">id</span>.<span class="fu">image</span>, R.<span class="fu">drawable</span>.<span class="fu">icon</span>);
+contentView.<span class="fu">setTextViewText</span>(R.<span class="fu">id</span>.<span class="fu">text</span>, <span class="st">&quot;Texto del mensaje&quot;</span>);
+notification.<span class="fu">contentView</span> = contentView;
+
+<span class="dt">final</span> Intent notificationIntent = <span class="kw">new</span> <span class="fu">Intent</span>(<span class="kw">this</span>, MyClass.<span class="fu">class</span>);
+<span class="dt">final</span> PendingIntent contentIntent = PendingIntent.<span class="fu">getActivity</span>(<span class="kw">this</span>, <span class="dv">0</span>, notificationIntent, <span class="dv">0</span>);
+
+<span class="dt">final</span> NotificationManager notificationManager =
+  (NotificationManager) context.<span class="fu">getSystemService</span>(Context.<span class="fu">NOTIFICATION_SERVICE</span>);
+notificationManager.<span class="fu">notify</span>(ID_NOTIFICACION_PERSONALIZADA, notification);</code></pre>
+</section><section id="pantalla-notificación-personalizada" class="slide level2">
+<h2><span class="header-section-number">13.12</span> Pantalla notificación personalizada</h2>
+<figure>
+<img src="../img/pantalla-statusbar-personalizada-02.png" alt="Notificación personalizada" /><figcaption>Notificación personalizada</figcaption>
+</figure>
+</section>
+<section id="ficheros" class="titleslide slide level1"><h1><span class="header-section-number">14</span> Ficheros</h1></section><section id="entradasalida-en-java" class="slide level2">
+<h2><span class="header-section-number">14.1</span> Entrada/Salida en Java</h2>
+<ul>
+<li>Todas las clases relacionadas con la Entrada/Salida estén en el paquete <strong>java.io</strong></li>
+<li>Java lo que maneja en realidad son flujos, ya sean de <strong>flujos de bytes o de caracteres</strong>.</li>
+<li>Los <strong>flujos de entrada</strong> son de entrada de datos del exterior hacia el sistema.</li>
+<li>Los <strong>flujos de salida</strong> son de salida de datos del sistema hacia el exterior.</li>
+<li>Esto se hizo así, de forma genérica, para poder <strong>manejar igual</strong> todos los flujos: el de entrada/salida estándar (teclado y monitor), el de los ficheros o el de red, etc.</li>
+<li>Las clases del paquete java.io implementan el <strong>patrón Decorator</strong>.</li>
+</ul>
+</section><section id="flujos-de-bytes-en-java" class="slide level2">
+<h2><span class="header-section-number">14.2</span> Flujos de bytes en Java</h2>
+<ul>
+<li><strong>InputStream/OutputStream</strong>
+<ul>
+<li><strong>Clases abstractas</strong> que definen las funciones básicas de lectura y escritura de un <strong>flujo de bytes sin estructurar</strong>.</li>
+</ul></li>
+<li><strong>FileInputStream/FileOutputStream</strong>
+<ul>
+<li>Pensadas para trabajar con <strong>archivos binarios</strong>.</li>
+</ul></li>
+<li><strong>BufferedInputStream/BufferedOutputStream</strong>
+<ul>
+<li><strong>Decoradores</strong> que añaden un <strong>buffer</strong> a los flujos de bytes.</li>
+</ul></li>
+</ul>
+</section><section id="flujos-de-caracteres-en-java" class="slide level2">
+<h2><span class="header-section-number">14.3</span> Flujos de caracteres en Java</h2>
+<ul>
+<li><strong>Reader/Writer</strong>
+<ul>
+<li><strong>Clases abstractas</strong> que definen las funciones básicas de lectura y escritura de un <strong>flujo de caracteres</strong>.</li>
+</ul></li>
+<li><strong>InputStreamReader/OutputStreamWriter</strong>
+<ul>
+<li><strong>Convierten flujos</strong> de bytes en flujos de caracteres.</li>
+</ul></li>
+<li><strong>FileReader/FileWriter</strong>
+<ul>
+<li>Pensadas para trabajar con <strong>archivos de texto</strong>.</li>
+</ul></li>
+<li><strong>BufferedReader/BufferedWriter</strong>
+<ul>
+<li><strong>Decoradores</strong> que añaden un <strong>buffer</strong> a los flujos de caracteres.</li>
+</ul></li>
+<li><strong>PrintWriter</strong>
+<ul>
+<li>Posee los métodos <strong>print y println</strong> que otorgan gran potencia a la escritura.</li>
+</ul></li>
+</ul>
+</section><section id="la-clase-file-de-java" class="slide level2">
+<h2><span class="header-section-number">14.4</span> La clase File de Java</h2>
+<ul>
+<li><strong>No</strong> proporciona métodos de <strong>lectura/escritura</strong> a los archivos.</li>
+<li><strong>Sólo</strong> proporciona operaciones a nivel de <strong>sistema de archivos</strong>:
+<ul>
+<li>gestión de permisos,</li>
+<li>listado de archivos,</li>
+<li>crear carpetas,</li>
+<li>borrar ficheros,</li>
+<li>cambiar nombre,</li>
+<li>etc.</li>
+</ul></li>
+</ul>
+</section><section id="ficheros-en-android" class="slide level2">
+<h2><span class="header-section-number">14.5</span> Ficheros en Android</h2>
+<ul>
+<li>Podremos almacenar ficheros en:
+<ul>
+<li>La memoria interna del dispositivo.</li>
+<li>La tarjeta SD externa, si disponible.</li>
+<li>La propia aplicación, en forma de recurso.</li>
+</ul></li>
+<li>Existen distintos modos de apertura:
+<ul>
+<li><strong>MODE_PRIVATE</strong> para acceso privado desde nuestra aplicación,</li>
+<li><strong>MODE_APPEND</strong> para añadir datos a un fichero ya existente,</li>
+<li><strong>MODE_WORLD_READABLE</strong> para permitir a otras aplicaciones leer el fichero y</li>
+<li><strong>MODE_WORLD_WRITABLE</strong> para permitir a otras aplicaciones escribir sobre el fichero.</li>
+</ul></li>
+<li>Se utiliza los métodos:
+<ul>
+<li><strong>openFileOutput()</strong> que devuelve un <strong>FileOutputStream</strong></li>
+<li><strong>openFileInput()</strong> que devuelve un <strong>FileInputStream</strong></li>
+<li><strong>getResources().openRawResource(idFichero)</strong> que devuelve un <strong>InputStream</strong></li>
+</ul></li>
+</ul>
+</section><section id="escribir-fichero-memoria-interna" class="slide level2">
+<h2><span class="header-section-number">14.6</span> Escribir fichero memoria interna</h2>
+<pre class="sourceCode java"><code class="sourceCode java">OutputStreamWriter fichero = <span class="kw">null</span>
+<span class="kw">try</span> {
+
+  <span class="co">// abrimos el fichero</span>
+  fichero = <span class="kw">new</span> OutputStreamWriter(
+    <span class="fu">openFileOutput</span>(<span class="st">&quot;prueba_int.txt&quot;</span>, Context.<span class="fu">MODE_PRIVATE</span>));
+
+  <span class="co">// escribimos en el fichero</span>
+  fichero.<span class="fu">write</span>(<span class="st">&quot;Texto de prueba.&quot;</span>);
+
+} <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+  Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error al escribir fichero en memoria interna&quot;</span>, e);
+} <span class="kw">finally</span> {
+  <span class="kw">try</span> {
+    <span class="kw">if</span> (fichero != <span class="kw">null</span>) fichero.<span class="fu">close</span>();
+  } <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+    Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error cerrando el fichero en memoria interna&quot;</span>);
+  }
+}</code></pre>
+</section><section id="directorio-memoria-interna" class="slide level2">
+<h2><span class="header-section-number">14.7</span> Directorio memoria interna</h2>
+<ul>
+<li>Android almacena por defecto los ficheros creados en una ruta determinada:</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/data/data/paquete.java.de.la.aplicacion/files/nombre_fichero</span></code></pre>
+<ul>
+<li>En nuestro caso:</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/data/data/curso.android/files/prueba_int.txt</span></code></pre>
+</section><section id="memoria-interna-en-el-ddms" class="slide level2">
+<h2><span class="header-section-number">14.8</span> Memoria interna en el DDMS</h2>
+<figure>
+<img src="../img/pantalla-ddms-fichero-interno.png" alt="Memoria interna en el DDMS" /><figcaption>Memoria interna en el DDMS</figcaption>
+</figure>
+</section><section id="leer-fichero-memoria-interna" class="slide level2">
+<h2><span class="header-section-number">14.9</span> Leer fichero memoria interna</h2>
+<pre class="sourceCode java"><code class="sourceCode java">BufferedReader fichero = <span class="kw">null</span>;
+<span class="kw">try</span> {
+
+  <span class="co">// abrimos el fichero para lectura</span>
+  fichero = <span class="kw">new</span> BufferedReader(<span class="kw">new</span> InputStreamReader(
+    <span class="fu">openFileInput</span>(<span class="st">&quot;prueba_int.txt&quot;</span>)));
+
+  <span class="co">// leemos el fichero linea a linea</span>
+  <span class="dt">final</span> StringBuilder texto = <span class="kw">new</span> StringBuilder();
+  String linea = fichero.<span class="fu">readLine</span>();
+  <span class="kw">while</span> (linea != <span class="kw">null</span>) {
+    texto.<span class="fu">append</span>(linea);
+    linea = fichero.<span class="fu">readLine</span>();
+  }
+} <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+  Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error al leer fichero desde memoria interna&quot;</span>, e);
+} <span class="kw">finally</span> {
+  <span class="kw">try</span> {
+    <span class="kw">if</span> (fichero != <span class="kw">null</span>) fichero.<span class="fu">close</span>();
+  } <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+    Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error cerrando el fichero desde memoria interna&quot;</span>);
+  }
+}</code></pre>
+</section><section id="leer-fichero-desde-recurso" class="slide level2">
+<h2><span class="header-section-number">14.10</span> Leer fichero desde recurso</h2>
+<pre class="sourceCode java"><code class="sourceCode java">BufferedReader fichero = <span class="kw">null</span>;
+<span class="kw">try</span> {
+
+  <span class="co">// abrimos el fichero para lectura</span>
+  fichero = <span class="kw">new</span> BufferedReader(<span class="kw">new</span> InputStreamReader(
+    FicherosActivity.<span class="fu">this</span>.<span class="fu">getResources</span>().<span class="fu">openRawResource</span>(R.<span class="fu">raw</span>.<span class="fu">prueba_raw</span>)));
+
+  <span class="co">// leemos el fichero linea a linea</span>
+  <span class="dt">final</span> StringBuilder texto = <span class="kw">new</span> StringBuilder();
+  String linea = fichero.<span class="fu">readLine</span>();
+  <span class="kw">while</span> (linea != <span class="kw">null</span>) {
+    texto.<span class="fu">append</span>(linea);
+    linea = fichero.<span class="fu">readLine</span>();
+  }
+} <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+  Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error al leer fichero desde recurso raw&quot;</span>, e);
+} <span class="kw">finally</span> {
+  <span class="kw">try</span> {
+    <span class="kw">if</span> (fichero != <span class="kw">null</span>) fichero.<span class="fu">close</span>();
+  } <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+    Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error cerrando el fichero desde recurso raw&quot;</span>);
+  }
+}</code></pre>
+</section><section id="leerescribir-en-tarjeta-sd" class="slide level2">
+<h2><span class="header-section-number">14.11</span> Leer/escribir en tarjeta SD</h2>
+<ul>
+<li>Tenemos que comprobar el estado con la función <strong>Environment.getExternalStorageState()</strong>:
+<ul>
+<li>Si es igual a Environment.<strong>MEDIA_MOUNTED</strong>
+<ul>
+<li>Podremos leer y escribir.</li>
+</ul></li>
+<li>Si es igual a Environment.<strong>MEDIA_MOUNTED_READ_ONLY</strong>
+<ul>
+<li>Sólo podremos leer.</li>
+</ul></li>
+<li>Ver otros estado en <a href="http://developer.android.com/reference/android/os/Environment.html">Environment</a></li>
+</ul></li>
+<li>Además habrá que dar permisos en el <strong>AndroidManifest.xml</strong>:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;uses-permission</span><span class="ot"> android:name=</span><span class="st">&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="escribir-en-tarjeta-sd" class="slide level2">
+<h2><span class="header-section-number">14.12</span> Escribir en tarjeta SD</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// Si la memoria externa está disponible y se puede escribir</span>
+<span class="kw">if</span> (Environment.<span class="fu">MEDIA_MOUNTED</span>.<span class="fu">equals</span>(Environment.<span class="fu">getExternalStorageState</span>())) {
+
+  OutputStreamWriter fichero = <span class="kw">null</span>;
+  <span class="kw">try</span> {
+
+    <span class="co">// abrimos el fichero para escritura</span>
+    fichero = <span class="kw">new</span> OutputStreamWriter(<span class="kw">new</span> FileOutputStream(
+      <span class="kw">new</span> File(Environment.<span class="fu">getExternalStorageDirectory</span>().<span class="fu">getAbsolutePath</span>(), <span class="st">&quot;prueba_sd.txt&quot;</span>)));
+
+    <span class="co">// escribimos en el fichero</span>
+    fichero.<span class="fu">write</span>(<span class="st">&quot;Texto de prueba para el fichero guardado en la SD.&quot;</span>);
+
+  } <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+    Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error al escribir fichero a tarjeta SD&quot;</span>, e);
+  } <span class="kw">finally</span> {
+    <span class="kw">try</span> {
+      <span class="kw">if</span> (fichero != <span class="kw">null</span>) fichero.<span class="fu">close</span>();
+    } <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+      Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error cerrando el fichero a tarjeta SD&quot;</span>);
+    }
+  }
+}</code></pre>
+</section><section id="leer-en-tarjeta-sd" class="slide level2">
+<h2><span class="header-section-number">14.13</span> Leer en tarjeta SD</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// Si la memoria externa está disponible y se puede leer</span>
+<span class="kw">if</span> (Environment.<span class="fu">MEDIA_MOUNTED</span>.<span class="fu">equals</span>(Environment.<span class="fu">getExternalStorageState</span>())
+    || Environment.<span class="fu">MEDIA_MOUNTED_READ_ONLY</span>.<span class="fu">equals</span>(Environment.<span class="fu">getExternalStorageState</span>()) {
+
+  BufferedReader fichero = <span class="kw">null</span>;
+  <span class="kw">try</span> {
+
+    <span class="co">// abrimos el fichero para lectura</span>
+    fichero = <span class="kw">new</span> BufferedReader(<span class="kw">new</span> InputStreamReader(<span class="kw">new</span> FileInputStream(
+      <span class="kw">new</span> File(Environment.<span class="fu">getExternalStorageDirectory</span>().<span class="fu">getAbsolutePath</span>(), <span class="st">&quot;prueba_sd.txt&quot;</span>))));
+
+    <span class="co">// leemos el fichero linea a linea</span>
+    <span class="dt">final</span> StringBuilder texto = <span class="kw">new</span> StringBuilder();
+    String linea = fichero.<span class="fu">readLine</span>();
+    <span class="kw">while</span> (linea != <span class="kw">null</span>) {
+      texto.<span class="fu">append</span>(linea);
+      linea = fichero.<span class="fu">readLine</span>();
+    }
+  } <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+    Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error al leer fichero desde memoria SD&quot;</span>, e);
+  } <span class="kw">finally</span> {
+    <span class="kw">try</span> {
+      <span class="kw">if</span> (fichero != <span class="kw">null</span>) fichero.<span class="fu">close</span>();
+    } <span class="kw">catch</span> (<span class="dt">final</span> Exception e) {
+      Log.<span class="fu">e</span>(<span class="st">&quot;Ficheros&quot;</span>, <span class="st">&quot;Error cerrando el fichero desde memoria SD&quot;</span>);
+    }
+  }
+}</code></pre>
+</section><section id="tarjeta-sd-en-el-ddms" class="slide level2">
+<h2><span class="header-section-number">14.14</span> Tarjeta SD en el DDMS</h2>
+<figure>
+<img src="../img/pantalla-ddms-fichero-memoria-sd.png" alt="Tarjeta SD en el DDMS" /><figcaption>Tarjeta SD en el DDMS</figcaption>
+</figure>
+</section>
+<section id="preferencias" class="titleslide slide level1"><h1><span class="header-section-number">15</span> Preferencias</h1></section><section id="preferencias-en-android" class="slide level2">
+<h2><span class="header-section-number">15.1</span> Preferencias en Android</h2>
+<ul>
+<li>Son datos que una aplicación guarda para personalizar la experiencia del usuario.</li>
+<li>Cada preferencia se almacenará en forma de <strong>clave-valor</strong>.</li>
+<li>Se guardan en fichero XML.</li>
+<li>La clase <strong>SharedPrefences</strong> gestiona colecciones de preferencias, que se diferenciarán mediante un identificador único.</li>
+<li>Para obtener una colección utilizaremos el método <strong>getSharedPrefences()</strong> al que pasaremos el identificador de la colección y un modo de acceso:
+<ul>
+<li><strong>MODE_PRIVATE</strong>: Sólo nuestra aplicación tiene acceso.</li>
+<li><strong>MODE_WORLD_READABLE</strong>: Todas las aplicaciones pueden leer.</li>
+<li><strong>MODE_WORLD_WRITABLE</strong>: Todas las aplicaciones pueden leer y modificar.</li>
+</ul></li>
+</ul>
+</section><section id="recuperar-preferencias" class="slide level2">
+<h2><span class="header-section-number">15.2</span> Recuperar Preferencias</h2>
+<pre class="sourceCode java"><code class="sourceCode java">SharedPreferences preferencias = <span class="fu">getSharedPreferences</span>(<span class="st">&quot;MIS_PREFERENCIAS&quot;</span>,Context.<span class="fu">MODE_PRIVATE</span>);
+
+String correo = preferencias.<span class="fu">getString</span>(<span class="st">&quot;email&quot;</span>, <span class="st">&quot;por_defecto@email.com&quot;</span>);</code></pre>
+</section><section id="guardar-preferencias" class="slide level2">
+<h2><span class="header-section-number">15.3</span> Guardar Preferencias</h2>
+<pre class="sourceCode java"><code class="sourceCode java">SharedPreferences preferencias = <span class="fu">getSharedPreferences</span>(<span class="st">&quot;MIS_PREFERENCIAS&quot;</span>,Context.<span class="fu">MODE_PRIVATE</span>);
+
+SharedPreferences.<span class="fu">Editor</span> editor = preferencias.<span class="fu">edit</span>();
+editor.<span class="fu">putString</span>(<span class="st">&quot;email&quot;</span>, <span class="st">&quot;modificado@email.com&quot;</span>);
+editor.<span class="fu">commit</span>();</code></pre>
+</section><section id="directorio-preferencias" class="slide level2">
+<h2><span class="header-section-number">15.4</span> Directorio Preferencias</h2>
+<ul>
+<li>Android almacena las preferencias en ficheros XML en una ruta determinada:</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/data/data/paquete.java.de.la.aplicacion/shared_prefs/nombre_coleccion.xml</span></code></pre>
+<ul>
+<li>En nuestro caso:</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/data/data/curso.android/shared_prefs/MIS_PREFERENCIAS.xml</span></code></pre>
+<ul>
+<li>El XML:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&#39;1.0&#39; encoding=&#39;utf-8&#39; standalone=&#39;yes&#39; <span class="kw">?&gt;</span>
+<span class="kw">&lt;map&gt;</span>
+    <span class="kw">&lt;string</span><span class="ot"> name=</span><span class="st">&quot;email&quot;</span><span class="kw">&gt;</span>modificado@email.com<span class="kw">&lt;/string&gt;</span>
+<span class="kw">&lt;/map&gt;</span></code></pre>
+</section><section id="preferencias-en-el-ddms" class="slide level2">
+<h2><span class="header-section-number">15.5</span> Preferencias en el DDMS</h2>
+<figure>
+<img src="../img/pantalla-ddms-preferencias.png" alt="Preferencias en el DDMS" /><figcaption>Preferencias en el DDMS</figcaption>
+</figure>
+</section>
+<section id="xml" class="titleslide slide level1"><h1><span class="header-section-number">16</span> XML</h1></section><section id="parsers-xml" class="slide level2">
+<h2><span class="header-section-number">16.1</span> Parsers XML</h2>
+<ul>
+<li>Los más conocidos son:
+<ul>
+<li>SAX (Simple API for XML):
+<ul>
+<li>Lee el fichero XML secuencialmente y va generando eventos que hay que capturar.</li>
+<li><a href="http://developer.android.com/reference/javax/xml/parsers/SAXParser.html">http://developer.android.com/reference/javax/xml/parsers/SAXParser.html</a></li>
+</ul></li>
+<li>Android SAX:
+<ul>
+<li>Idem que el SAX paro los listener se asocian a etiquetas.</li>
+<li><a href="http://developer.android.com/reference/android/sax/package-summary.html">http://developer.android.com/reference/android/sax/package-summary.html</a></li>
+</ul></li>
+<li>XmlPull:
+<ul>
+<li>Parecido a SAX sólo que es el programador el que va eligiendo hacia donde se lee el fichero.</li>
+<li><a href="http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html">http://developer.android.com/reference/org/xmlpull/v1/XmlPullParser.html</a></li>
+</ul></li>
+<li>DOM (Document Object Model):
+<ul>
+<li>Lee el fichero XML completamente y devuelve un árbol de elementos.</li>
+<li><a href="http://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html">http://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html</a></li>
+</ul></li>
+</ul></li>
+<li>No los vamos a estudiar detenidamente, sólo a utilizarlos.</li>
+</ul>
+</section><section id="rss-de-europapress" class="slide level2">
+<h2><span class="header-section-number">16.2</span> RSS de europapress</h2>
+<ul>
+<li>Nosotros vamos a utilizar la RSS de <a href="http://www.europapress.es/rss/rss.aspx">http://www.europapress.es/rss/rss.aspx</a>:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;rss</span><span class="ot"> version=</span><span class="st">&quot;2.0&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;channel&gt;</span>
+    ...
+    <span class="kw">&lt;item&gt;</span>
+      <span class="er">&lt;</span>title&gt;Título de la noticia 1<span class="kw">&lt;/title&gt;</span>
+      <span class="kw">&lt;link&gt;</span>http://link_de_la_noticia_1.es<span class="kw">&lt;/link&gt;</span>
+      <span class="er">&lt;</span>description&gt;Descripción de la noticia 1<span class="kw">&lt;/description&gt;</span>
+      ...
+    <span class="kw">&lt;/item&gt;</span>
+    <span class="kw">&lt;item&gt;</span>
+      <span class="er">&lt;</span>title&gt;Título de la noticia 2<span class="kw">&lt;/title&gt;</span>
+      ...
+    <span class="er">&lt;</span>/item&gt;
+    ...
+  <span class="er">&lt;</span>/channel&gt;
+<span class="er">&lt;</span>/rss&gt;</code></pre>
+</section><section id="código-1" class="slide level2">
+<h2><span class="header-section-number">16.3</span> Código</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Noticia {
+
+  <span class="kw">private</span> String titulo;
+  <span class="kw">private</span> String link;
+  <span class="kw">private</span> String descripcion;
+
+  <span class="co">// getters y setters</span>
+}</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// donde Xxx será el parser que codifiquemos (SAX, StAX, XmlPull o DOM)</span>
+RssParserXxx parserXxx = <span class="kw">new</span> <span class="fu">RssParserXxx</span>(<span class="st">&quot;http://www.europapress.es/rss/rss.aspx&quot;</span>);
+
+<span class="co">// parseamos el XML del RSS</span>
+List&lt;Noticia&gt; noticias = parserXxx.<span class="fu">parse</span>();
+
+<span class="co">// Manipulación del array de noticias (ListView)</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;uses-permission</span><span class="ot"> android:name=</span><span class="st">&quot;android.permission.INTERNET&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="ejemplo-xml" class="slide level2">
+<h2><span class="header-section-number">16.4</span> Ejemplo XML</h2>
+<figure>
+<img src="../img/pantalla-xml-03.png" alt="Ejemplo XML" /><figcaption>Ejemplo XML</figcaption>
+</figure>
+</section>
+<section id="json" class="titleslide slide level1"><h1><span class="header-section-number">17</span> JSON</h1></section><section id="apis-rest" class="slide level2">
+<h2><span class="header-section-number">17.1</span> APIS REST</h2>
+<ul>
+<li>Hoy en día, cada vez hay más APIS REST públicas:
+<ul>
+<li><a href="http://dev.twitter.com/">http://dev.twitter.com/</a></li>
+<li><a href="http://developers.facebook.com/">http://developers.facebook.com/</a></li>
+</ul></li>
+<li>REST utiliza los métodos definidos en el protocolo HTTP:
+<ul>
+<li><strong>GET</strong>: para recuperar un recurso.</li>
+<li><strong>POST</strong>: para insertar un recurso.</li>
+<li><strong>PUT</strong>: para actualizar un recurso.</li>
+<li><strong>DELETE</strong>: para borrar un recurso.</li>
+</ul></li>
+</ul>
+</section><section id="json-vs-xml" class="slide level2">
+<h2><span class="header-section-number">17.2</span> JSON VS XML</h2>
+<ul>
+<li>En las APIS REST <strong>el intercambio de información se hace sobre todo con JSON</strong> porque es más sencillo y más rápido de procesar que el XML.</li>
+</ul>
+<pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+    <span class="dt">&quot;menu&quot;</span><span class="fu">:</span> <span class="fu">{</span>
+        <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;file&quot;</span><span class="fu">,</span>
+        <span class="dt">&quot;value&quot;</span><span class="fu">:</span> <span class="st">&quot;File&quot;</span><span class="fu">,</span>
+        <span class="dt">&quot;menuitems&quot;</span><span class="fu">:</span> <span class="ot">[</span> <span class="st">&quot;Open&quot;</span><span class="ot">,</span> <span class="st">&quot;Close&quot;</span> <span class="ot">]</span>
+    <span class="fu">}</span>
+<span class="fu">}</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;menu</span><span class="ot"> id=</span><span class="st">&quot;file&quot;</span><span class="ot"> value=</span><span class="st">&quot;File&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;menuitems&gt;</span>
+    <span class="kw">&lt;item&gt;</span>Open<span class="kw">&lt;item&gt;</span>
+    <span class="kw">&lt;item&gt;</span>Close<span class="kw">&lt;item&gt;</span>
+  <span class="kw">&lt;/menuitems&gt;</span>
+<span class="kw">&lt;/menu&gt;</span></code></pre>
+</section><section id="recuperar-json" class="slide level2">
+<h2><span class="header-section-number">17.3</span> Recuperar JSON</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> HttpResponse response = <span class="kw">new</span> <span class="fu">DefaultHttpClient</span>().<span class="fu">execute</span>(<span class="kw">new</span> <span class="fu">HttpGet</span>(
+    <span class="st">&quot;http://twitter.com/statuses/user_timeline/&quot;</span> + twitterUserName  + <span class="st">&quot;.json&quot;</span>));
+
+<span class="dt">final</span> <span class="dt">int</span> statusCode = response.<span class="fu">getStatusLine</span>().<span class="fu">getStatusCode</span>();
+
+<span class="kw">if</span> (statusCode == <span class="dv">200</span>) {
+
+    <span class="dt">final</span> BufferedReader reader = <span class="kw">new</span> BufferedReader(<span class="kw">new</span> InputStreamReader(
+        response.<span class="fu">getEntity</span>().<span class="fu">getContent</span>()));
+    
+    <span class="dt">final</span> StringBuilder json = <span class="kw">new</span> StringBuilder();
+    String line;
+    <span class="kw">while</span> ((line = reader.<span class="fu">readLine</span>()) != <span class="kw">null</span>) {
+        json.<span class="fu">append</span>(line);
+    }
+    
+    JSONArray jsonArray = <span class="kw">new</span> <span class="fu">JSONArray</span>(json.<span class="fu">toString</span>());
+
+    <span class="dt">final</span> List&lt;String&gt; userTweets = <span class="kw">new</span> ArrayList&lt;String&gt;();
+    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; jsonArray.<span class="fu">length</span>(); i++) {
+        userTweets.<span class="fu">add</span>(jsonArray.<span class="fu">getJSONObject</span>(i).<span class="fu">getString</span>(<span class="st">&quot;text&quot;</span>));
+    }
+}</code></pre>
+</section>
+<section id="sqlite" class="titleslide slide level1"><h1><span class="header-section-number">18</span> SQLite</h1></section><section id="qué-es-sqlite" class="slide level2">
+<h2><span class="header-section-number">18.1</span> ¿Qué es SQLite?</h2>
+<ul>
+<li>Es un motor de <strong>bases de datos</strong>:
+<ul>
+<li>de código libre,</li>
+<li>de tamaño pequeño,</li>
+<li>transaccional y</li>
+<li>que precisa poca configuración.</li>
+</ul></li>
+</ul>
+</section><section id="crear-o-actualizar" class="slide level2">
+<h2><span class="header-section-number">18.2</span> Crear o actualizar</h2>
+<ul>
+<li>Se hace mediante una clase que <strong>herede SQLiteOpenHelper</strong> y sobreescriba 2 métodos:
+<ul>
+<li><strong>onCreate()</strong> que se utiliza para crear la base de datos y</li>
+<li><strong>onUpgrade()</strong> que se ejecuta si la base de datos está creada y tienen una versión (pasada en el costructor) anterior.</li>
+</ul></li>
+</ul>
+</section><section id="ejecutar-sentencias-sql" class="slide level2">
+<h2><span class="header-section-number">18.3</span> Ejecutar sentencias SQL</h2>
+<ul>
+<li>Luego se puede llamar a los método <strong>getReadableDatabase()</strong> o <strong>getWritableDatabase()</strong> que devuelven un objeto de tipo <strong>SQLiteDatabase</strong> con los métodos siguientes:
+<ul>
+<li><strong>execSQL()</strong> para ejecutar sentencias SQL de actualización (INSERT, UPDATE, DELETE),</li>
+<li><strong>rawQuery()</strong> para ejecutar sentencias SQL de consulta (SELECT),</li>
+<li><strong>close()</strong> para cerrar la conexión a la base de datos.</li>
+</ul></li>
+<li>Veremos que hay más métodos de ayuda:
+<ul>
+<li><strong>insert()</strong></li>
+<li><strong>update()</strong></li>
+<li><strong>delete()</strong></li>
+<li><strong>query()</strong></li>
+</ul></li>
+</ul>
+</section><section id="directorio" class="slide level2">
+<h2><span class="header-section-number">18.4</span> Directorio</h2>
+<ul>
+<li>Android almacena el fichero de la base de datos en una ruta determinada:</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/data/data/paquete.java.de.la.aplicacion/databases/nombre_base_datos</span></code></pre>
+<p>En el caso de nuestro ejemplo, la base de datos se almacenaría por tanto en la ruta siguiente:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/data/data/curso.android/databases/data</span></code></pre>
+</section><section id="sqlite-en-el-ddms" class="slide level2">
+<h2><span class="header-section-number">18.5</span> SQLite en el DDMS</h2>
+<figure>
+<img src="../img/pantalla-ddms-sqlite.png" alt="SQLite en el DDMS" /><figcaption>SQLite en el DDMS</figcaption>
+</figure>
+</section><section id="consola-sqlite" class="slide level2">
+<h2><span class="header-section-number">18.6</span> Consola SQLite</h2>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">alumno@alumno-laptop</span>:~$ cd android-sdk-linux_x86/platform-tools/
+<span class="kw">alumno@alumno-laptop</span>:~/android-sdk-linux_x86/platform-tools$ adb -s emulator-5554 shell
+<span class="co">## sqlite3 /data/data/curso.android/databases/data</span>
+<span class="kw">SQLite</span> version 3.5.9
+<span class="kw">Enter</span> <span class="st">&quot;.help&quot;</span> for instructions
+<span class="kw">sqlite&gt;</span> select * from notes<span class="kw">;</span>
+<span class="kw">1|Primera</span> nota  <span class="kw">|Texto</span> primera nota
+<span class="kw">2|Segunda</span> nota  <span class="kw">|Texto</span> segunda nota
+<span class="kw">sqlite&gt;</span> .exit
+<span class="co">## exit</span>
+<span class="kw">alumno@alumno-laptop</span>:~/android-sdk-linux_x86/platform-tools$</code></pre>
+</section><section id="insert-normal-y-helper" class="slide level2">
+<h2><span class="header-section-number">18.7</span> Insert (normal y helper)</h2>
+<pre class="sourceCode java"><code class="sourceCode java">db.<span class="fu">execSQL</span>(<span class="st">&quot;INSERT INTO notes (title, body) VALUES (&#39;Primera nota&#39;, &#39;Texto primera nota&#39;)&quot;</span>);</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// Indicamos el nombre de la tabla</span>
+<span class="dt">final</span> String nombreTabla = <span class="st">&quot;notes&quot;</span>
+
+<span class="co">// Creamos el registro a insertar como objeto ContentValues</span>
+<span class="dt">final</span> ContentValues valores = <span class="kw">new</span> <span class="fu">ContentValues</span>();
+valores.<span class="fu">put</span>(<span class="st">&quot;tittle&quot;</span>, <span class="st">&quot;Primera nota&quot;</span>);
+valores.<span class="fu">put</span>(<span class="st">&quot;body&quot;</span>, <span class="st">&quot;Texto primera nota&quot;</span>);
+
+<span class="co">// Insertamos el registro en la base de datos</span>
+db.<span class="fu">insert</span>(nombreTabla, <span class="kw">null</span>, valores);</code></pre>
+</section><section id="update-helper-con-where" class="slide level2">
+<h2><span class="header-section-number">18.8</span> Update (helper con where)</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// Indicamos el nombre de la tabla</span>
+<span class="dt">final</span> String nombreTabla = <span class="st">&quot;notes&quot;</span>
+
+<span class="co">// Creamos el registro a actualizar como objeto ContentValues</span>
+<span class="dt">final</span> ContentValues valores = <span class="kw">new</span> <span class="fu">ContentValues</span>();
+valores.<span class="fu">put</span>(<span class="st">&quot;body&quot;</span>, <span class="st">&quot;Texto primera nota);</span>
+
+<span class="co">// Indicamos una clausula where</span>
+<span class="dt">final</span> String where = <span class="st">&quot;tittle=&#39;Primera nota&#39;&quot;</span>
+
+<span class="co">// Actualizamos el registro en la base de datos</span>
+db.<span class="fu">update</span>(nombreTabla, valores, where);</code></pre>
+</section><section id="delete-helper-con-parámetros" class="slide level2">
+<h2><span class="header-section-number">18.9</span> Delete (helper con parámetros)</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// Indicamos el nombre de la tabla</span>
+<span class="dt">final</span> String nombreTabla = <span class="st">&quot;notes&quot;</span>
+
+<span class="co">// Indicamos una clausula where, esta vez con un parametro</span>
+<span class="dt">final</span> String where = <span class="st">&quot;tittle=?&quot;</span>;
+
+<span class="dt">final</span> String[] parametros = <span class="kw">new</span> String[]{<span class="st">&quot;Primera nota&quot;</span>};
+
+<span class="co">// Borramos el registro en la base de datos</span>
+db.<span class="fu">delete</span>(nombreTabla, where, parametros);</code></pre>
+</section><section id="consultas" class="slide level2">
+<h2><span class="header-section-number">18.10</span> Consultas</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> Cursor c = db.<span class="fu">rawQuery</span>(<span class="st">&quot;SELECT tittle, body FROM notes WHERE title=&#39;Primera nota&#39;&quot;</span>);</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> String[] argumentos = <span class="kw">new</span> String[] {<span class="st">&quot;Primera nota&quot;</span>};
+<span class="dt">final</span> Cursor c = db.<span class="fu">rawQuery</span>(<span class="st">&quot;SELECT tittle, body FROM notes WHERE title=?&quot;</span>, argumentos);</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> String nombreTabla = <span class="st">&quot;notes&quot;</span>
+<span class="dt">final</span> String[] campos = <span class="kw">new</span> String[] {<span class="st">&quot;tittle&quot;</span>, <span class="st">&quot;body&quot;</span>};
+<span class="dt">final</span> String where = <span class="st">&quot;tittle=?&quot;</span>;
+<span class="dt">final</span> String[] argumentos = <span class="kw">new</span> String[] {<span class="st">&quot;usu1&quot;</span>};
+<span class="dt">final</span> String goupBy = <span class="kw">null</span>;
+<span class="dt">final</span> String having = <span class="kw">null</span>;
+<span class="dt">final</span> String orderBy = <span class="kw">null</span>;
+
+<span class="dt">final</span> Cursor c = db.<span class="fu">query</span>(nombreTabla, campos, where, argumentos, goupBy, having, orderBy);</code></pre>
+</section><section id="recorrer-el-cursor" class="slide level2">
+<h2><span class="header-section-number">18.11</span> Recorrer el cursor</h2>
+<ul>
+<li>Métodos:
+<ul>
+<li><strong>moveToFirst()</strong>: mueve el puntero del cursor al primer registro devuelto y devuelve TRUE si no hay errores.</li>
+<li><strong>moveToNext()</strong>: mueve el puntero del cursor al siguiente registro devuelto y devuelve TRUE si no hay errores.</li>
+<li><strong>getXXX(indiceColumna)</strong> donde XXX = String, Double, etc. NOTA: los índices comienzan en 0.</li>
+<li><strong>getCount()</strong>: indica el número total de registros devueltos en el cursor.</li>
+<li><strong>getColumnName(i)</strong>: devuelve el nombre de la columna con índice i.</li>
+</ul></li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="co">// Nos aseguramos de que existe al menos un registro</span>
+<span class="kw">if</span> (c.<span class="fu">moveToFirst</span>()) {
+
+  <span class="co">// Recorremos el cursor hasta que no haya más registros</span>
+  <span class="kw">do</span> {
+    <span class="dt">final</span> String tittle = c.<span class="fu">getString</span>(<span class="dv">0</span>);
+    <span class="dt">final</span> String body = c.<span class="fu">getString</span>(<span class="dv">1</span>);
+  } <span class="kw">while</span>(c.<span class="fu">moveToNext</span>());
+}</code></pre>
+</section>
+<section id="logging" class="titleslide slide level1"><h1><span class="header-section-number">19</span> Logging</h1></section><section id="logging-en-android" class="slide level2">
+<h2><span class="header-section-number">19.1</span> Logging en Android</h2>
+<ul>
+<li>Android nos proporciona también su propio servicio de logging a través de la clase <strong>android.util.Log</strong>.</li>
+<li>Todos los mensajes de log llevarán asociada la siguiente información:
+<ul>
+<li><strong>Fecha/Hora</strong>: Indica cuando se generó el mensaje.</li>
+<li><strong>Criticidad</strong>: Nivel de gravedad del mensaje.</li>
+<li><strong>PID</strong>: Código interno del proceso que ha introducido el mensaje.</li>
+<li><strong>Tag</strong>: Etiqueta identificativa del mensaje.</li>
+<li><strong>Mensaje</strong>: El texto completo del mensaje.</li>
+</ul></li>
+</ul>
+</section><section id="criticidad" class="slide level2">
+<h2><span class="header-section-number">19.2</span> Criticidad</h2>
+<pre><code>-------------- ---------------------------------
+  Criticidad              Método
+-------------- ---------------------------------
+    Error        e(tag, mensaje [, excepcion])
+
+   Warning       w(tag, mensaje [, excepcion])
+
+    Info         i(tag, mensaje [, excepcion])
+
+    Debug        d(tag, mensaje [, excepcion])
+
+   Verbose       v(tag, mensaje [, excepcion])
+-------------- ---------------------------------</code></pre>
+</section><section id="ejemplo" class="slide level2">
+<h2><span class="header-section-number">19.3</span> Ejemplo</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> LogsAndroid <span class="kw">extends</span> Activity {
+
+    <span class="kw">private</span> <span class="dt">static</span> <span class="dt">final</span> String LOGTAG = <span class="st">&quot;LogsAndroid&quot;</span>;
+
+    <span class="fu">@Override</span>
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCreate</span>(Bundle savedInstanceState) {
+        <span class="kw">super</span>.<span class="fu">onCreate</span>(savedInstanceState);
+        <span class="fu">setContentView</span>(R.<span class="fu">layout</span>.<span class="fu">main</span>);
+
+        Log.<span class="fu">e</span>(LOGTAG, <span class="st">&quot;Mensaje de error&quot;</span>);
+        Log.<span class="fu">w</span>(LOGTAG, <span class="st">&quot;Mensaje de warning&quot;</span>);
+        Log.i(LOGTAG, <span class="st">&quot;Mensaje de información&quot;</span>);
+        Log.d(LOGTAG, <span class="st">&quot;Mensaje de depuración&quot;</span>);
+        Log.<span class="fu">v</span>(LOGTAG, <span class="st">&quot;Mensaje de verbose&quot;</span>);
+    }
+}</code></pre>
+</section><section id="logcat" class="slide level2">
+<h2><span class="header-section-number">19.4</span> LogCat</h2>
+<figure>
+<img src="../img/pantalla-logcat.png" alt="LogCat" /><figcaption>LogCat</figcaption>
+</figure>
+</section><section id="filtrado-del-logcat" class="slide level2">
+<h2><span class="header-section-number">19.5</span> Filtrado del LogCat</h2>
+<figure>
+<img src="../img/pantalla-logcat-filtro.png" alt="Filtro de LogCat" /><figcaption>Filtro de LogCat</figcaption>
+</figure>
+<figure>
+<img src="../img/pantalla-logcat-filtrado.png" alt="LogCat filtrado" /><figcaption>LogCat filtrado</figcaption>
+</figure>
+</section><section id="excepciones" class="slide level2">
+<h2><span class="header-section-number">19.6</span> Excepciones</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">try</span>
+{
+    <span class="dt">int</span> a = <span class="dv">1</span>/<span class="dv">0</span>;
+}
+<span class="kw">catch</span>(<span class="dt">final</span> Exception e)
+{
+    Log.e(LOGTAG, <span class="st">&quot;División por cero!&quot;</span>, e);
+}</code></pre>
+<figure>
+<img src="../img/pantalla-logcat-excepcion.png" alt="Excepción en el LogCat" /><figcaption>Excepción en el LogCat</figcaption>
+</figure>
+</section>
+<section id="app-widgets" class="titleslide slide level1"><h1><span class="header-section-number">20</span> App Widgets</h1></section><section id="qué-son-los-app-widgets" class="slide level2">
+<h2><span class="header-section-number">20.1</span> ¿Qué son los App Widgets?</h2>
+<ul>
+<li>Son elementos visuales que se colocan en la pantalla principal del dispositivo y muestra información que puede ser actualizada periódicamente.</li>
+<li>Sólo es posible utilizar en su interfaz los siguientes:
+<ul>
+<li><strong>Contenedores</strong>: FrameLayout, LinearLayout y RelativeLayout</li>
+<li><strong>Controles</strong>: Button, ImageButton, ImageView, TextView, ProgressBar, Chronometer y AnalogClock.</li>
+</ul></li>
+</ul>
+</section><section id="propiedades-i" class="slide level2">
+<h2><span class="header-section-number">20.2</span> Propiedades (I)</h2>
+<ul>
+<li>Se definen en un fichero XML (mi_widget_provider.xml)</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;appwidget-provider</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">    android:initialLayout=</span><span class="st">&quot;@layout/mi_widget&quot;</span>
+<span class="ot">    android:minWidth=</span><span class="st">&quot;146dp&quot;</span>
+<span class="ot">    android:minHeight=</span><span class="st">&quot;146dp&quot;</span>
+<span class="ot">    android:label=</span><span class="st">&quot;Mi Widget&quot;</span>
+<span class="ot">    android:updatePeriodMillis=</span><span class="st">&quot;3600000&quot;</span>
+<span class="ot">    android:configure=</span><span class="st">&quot;curso.android.WidgetConfigurationActivity&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="propiedades-ii" class="slide level2">
+<h2><span class="header-section-number">20.3</span> Propiedades (II)</h2>
+<ul>
+<li>Del ejemplo anterior:
+<ul>
+<li><strong>initialLayout</strong>: referencia al layout XML que define la interfaz del Widget.</li>
+<li><strong>minWidth</strong> y <strong>minHeight</strong>: ancho y alto mínimo, en dp (density-independent pixels).
+<ul>
+<li>valor = (num-celdas * 74) – 2</li>
+</ul></li>
+<li><strong>label</strong>: nombre del widget en el menú de selección de Android.</li>
+<li><strong>updatePeriodMillis</strong>: frecuencia de actualización del widget, en milisegundos
+<ul>
+<li>si automático, mínimo cada 30 minutos, pero se puede disminuir con Alarmas.</li>
+</ul></li>
+<li><strong>configure</strong>: clase de configuración, que se lanza la primera vez.</li>
+</ul></li>
+</ul>
+</section><section id="la-clase-appwidgetprovider" class="slide level2">
+<h2><span class="header-section-number">20.4</span> La clase AppWidgetProvider</h2>
+<ul>
+<li>Derivada de BroadcastReceiver, podemos sobreescribir:
+<ul>
+<li><strong>onEnabled()</strong>: lanzado cuando se añade al escritorio la primera instancia de un widget.</li>
+<li><strong>onUpdate()</strong>: lanzado periodicamente cada vez que se debe actualizar un widget.</li>
+<li><strong>onDeleted()</strong>: lanzado cuando se elimina del escritorio una instancia de un widget.</li>
+<li><strong>onDisabled()</strong>: lanzado cuando se elimina del escritorio la última instancia de un widget.</li>
+<li><strong>onReceive()</strong>: lanzado cuando le llega un Intent.</li>
+</ul></li>
+</ul>
+</section><section id="androidmanifest.xml-i" class="slide level2">
+<h2><span class="header-section-number">20.5</span> AndroidManifest.xml (I)</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.WidgetConfigurationActivity&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;intent-filter&gt;</span>
+    <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;android.apwidget.action.APPWIDGET_CONFIGURE&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/intent-filter&gt;</span>
+<span class="kw">&lt;/activity&gt;</span>
+
+<span class="kw">&lt;receiver</span><span class="ot"> android:name=</span><span class="st">&quot;curso.android.MiWidget&quot;</span><span class="ot"> android:label=</span><span class="st">&quot;Mi Widget&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;intent-filter&gt;</span>
+    <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;android.appwidget.action.APPWIDGET_UPDATE&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/intent-filter&gt;</span>
+  <span class="kw">&lt;intent-filter&gt;</span>
+    <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;curso.android.ACTUALIZAR_WIDGET&quot;</span><span class="kw">/&gt;</span>
+  <span class="kw">&lt;/intent-filter&gt;</span>
+  <span class="kw">&lt;meta-data</span>
+<span class="ot">    android:name=</span><span class="st">&quot;android.appwidget.provider&quot;</span>
+<span class="ot">    android:resource=</span><span class="st">&quot;@xml/mi_widget_provider&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/receiver&gt;</span></code></pre>
+</section><section id="androidmanifest.xml-ii" class="slide level2">
+<h2><span class="header-section-number">20.6</span> AndroidManifest.xml (II)</h2>
+<ul>
+<li>Hacemos referencia a la <strong>Activity de configuración</strong>, diciendóle que responda al Intent <strong>APPWIDGET_CONFIGURE</strong></li>
+<li>El Widget está dentro de un elemento &lt;receiver&gt;.</li>
+<li>Normalmente responderá al Intent <strong>APPWIDGET_UPDATE</strong>, pero podemos definir nuestros propios Intent.</li>
+<li>En el elemento &lt;meta-data&gt; hacemos referencia a su XML de configuración.</li>
+</ul>
+</section>
+<section id="content-resolvers" class="titleslide slide level1"><h1><span class="header-section-number">21</span> Content Resolvers</h1></section><section id="para-qué-sirven-los-content-resolvers" class="slide level2">
+<h2><span class="header-section-number">21.1</span> ¿Para qué sirven los Content Resolvers?</h2>
+<ul>
+<li>Sirven para recoger datos de los <strong>Content Providers</strong>.</li>
+<li>Ejemplo: Acceder a tu lista de contatos.</li>
+</ul>
+<figure>
+<img src="../img/pantalla-contact-content-resolver.png" alt="Contact Content Resolver" /><figcaption>Contact Content Resolver</figcaption>
+</figure>
+</section><section id="query" class="slide level2">
+<h2><span class="header-section-number">21.2</span> Query</h2>
+<ul>
+<li>A un Content Resolver hay que pasarle una <strong>query</strong>:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> URI uri = Contacts.CONTENT_URI; <span class="co">// específica para cada ContentProvider</span>
+<span class="dt">final</span> String[] columns = <span class="kw">null</span> <span class="co">// columnas a retornar, null si todas</span>
+<span class="dt">final</span> String where = Contacts.<span class="fu">HAS_PHONE_NUMBER</span> + <span class="st">&quot;=1&quot;</span>;
+<span class="dt">final</span> String[] parametros = <span class="kw">null</span> <span class="co">// parametros del where, null si no hay</span>
+<span class="dt">final</span> String columnSort = <span class="kw">null</span> <span class="co">// columna por la cual ordenar, null si da igual</span>
+
+<span class="dt">final</span> ContentResolver contentResolver = <span class="kw">this</span>.<span class="fu">getContentResolver</span>();
+<span class="dt">final</span> Cursor cursor = contentResolver.<span class="fu">query</span>(uri, columns, where, parametros, columnSort);</code></pre>
+<ul>
+<li>El <strong>cursor</strong> que devuelve es el mismo explicado con <strong>sqlite</strong></li>
+</ul>
+</section>
+<section id="localización" class="titleslide slide level1"><h1><span class="header-section-number">22</span> Localización</h1></section><section id="localización-en-android" class="slide level2">
+<h2><span class="header-section-number">22.1</span> Localización en Android</h2>
+<ul>
+<li>Mecanismo fácil de programar, pero <strong>poco intuitivo</strong>:
+<ul>
+<li>Distintos provedores (GPS, antenas móviles, 3G, Wi-Fi)</li>
+<li>Distintas propiedades (precisión, altura, velocidad, consumo, dirección)</li>
+<li>No siempre disponibles, activos y permitidos.</li>
+<li>No son síncronos.</li>
+</ul></li>
+</ul>
+</section><section id="lista-de-provedores-disponibles" class="slide level2">
+<h2><span class="header-section-number">22.2</span> Lista de provedores disponibles</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> LocationManager locationManager = (LocationManager) <span class="kw">this</span>.<span class="fu">getSystemService</span>(LOCATION_SERVICE);
+<span class="dt">final</span> List&lt;String&gt; locationProviders = locationManager.<span class="fu">getAllProviders</span>();</code></pre>
+<ul>
+<li>Retorna el nombre de todos los provedores de localización disponibles en el dispositivo, estén activos o no y tenga o no permisos la aplicación para utilizarlos (permisos del AndroidManifest.xml)</li>
+</ul>
+</section><section id="recuperar-un-provedor" class="slide level2">
+<h2><span class="header-section-number">22.3</span> Recuperar un provedor</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> LocationManager locationManager = (LocationManager) <span class="kw">this</span>.<span class="fu">getSystemService</span>(LOCATION_SERVICE);
+<span class="dt">final</span> LocationProvider locationProvider = locationManager.<span class="fu">getLocationProvider</span>(providerName);</code></pre>
+</section><section id="propiedades-de-un-provedor" class="slide level2">
+<h2><span class="header-section-number">22.4</span> Propiedades de un provedor</h2>
+<ul>
+<li>La clase <strong>LocationProvider</strong> nos facilita, entre otros, los siguientes métodos:
+<ul>
+<li><strong>getAccuracy()</strong>: Tipo de precisión del provedor.
+<ul>
+<li>Criteria.ACCURACY_COARSE: precisión aproximada.</li>
+<li>Criteria.ACCURACY_FINE: preción alta.</li>
+</ul></li>
+<li><strong>getName()</strong>: Nombre del provedor.</li>
+<li><strong>getPowerRequirement()</strong>: Consumo energético del provedor.
+<ul>
+<li>Criteria.POWER_LOW: bajo consumo energético.</li>
+<li>Criteria.POWER_MEDIUM: consumo energético medio.</li>
+</ul></li>
+<li><strong>requiresCell()</strong>: Indica se requiere conexión telefónica (antenas móviles)</li>
+<li><strong>requiresNetwork()</strong>: Indica se requiere conexión a Internet.</li>
+<li><strong>requiresSatellite()</strong>: Indica se requiere conexión GPS.</li>
+<li><strong>supportsAltitude()</strong>: Indica si es capaz de mostar la altitud.</li>
+<li><strong>supportsBearing()</strong>: Indica si es capaz de mostar la dirección.</li>
+<li><strong>supportsSpeed()</strong>: Indica si es capaz de mostar la velocidad.</li>
+</ul></li>
+</ul>
+</section><section id="mejor-provedor-para-para-mi-aplicación" class="slide level2">
+<h2><span class="header-section-number">22.5</span> Mejor provedor para para mi aplicación</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> Criteria criteria = <span class="kw">new</span> <span class="fu">Criteria</span>();
+
+<span class="co">// Indicamos los requisitos de nuestra apliación</span>
+criteria.<span class="fu">setAccuracy</span>(Criteria.<span class="fu">ACCURACY_COARSE</span>);
+criteria.<span class="fu">setAltitudeRequired</span>(<span class="kw">false</span>);
+criteria.<span class="fu">setBearingRequired</span>(<span class="kw">true</span>);
+criteria.<span class="fu">setPowerRequirement</span>(Criteria.<span class="fu">POWER_LOW</span>);
+criteria.<span class="fu">setSpeedRequired</span>(<span class="kw">false</span>);
+
+<span class="co">// Indicamos si queremos que además el provedor esté activo</span>
+<span class="dt">final</span> <span class="dt">boolean</span> enabledOnly = <span class="kw">false</span>;
+
+<span class="co">// Mejor proveedor para los requisitos indicados</span>
+<span class="dt">final</span> String bestLocationProvider = locationManager.<span class="fu">getBestProvider</span>(criteria, enabledOnly);
+
+<span class="co">// Lista de proveedores que cumplen los requisitos indicados</span>
+<span class="dt">final</span> List&lt;String&gt; criteriaLocationProviders = locationManager.<span class="fu">getProviders</span>(criteria, enabledOnly);</code></pre>
+</section><section id="está-activo-el-provedor" class="slide level2">
+<h2><span class="header-section-number">22.6</span> ¿Está activo el provedor?</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> String providerName = LocationManager.<span class="fu">GPS_PROVIDER</span>;
+
+<span class="kw">if</span> ( ! locationManager.<span class="fu">isProviderEnabled</span>(providerName) ) {
+
+    <span class="fu">mostrarAdvertenciaProviderDesactivado</span>(providerName);
+}</code></pre>
+</section><section id="última-localización-conocida" class="slide level2">
+<h2><span class="header-section-number">22.7</span> Última localización conocida</h2>
+<ul>
+<li>Última localización conocida (hace una hora, un día, un mes o un año) para un provider concreto:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="dt">final</span> Location location = locationManager.<span class="fu">getLastKnownLocation</span>(providerName);</code></pre>
+</section><section id="subscribirse-al-provedor" class="slide level2">
+<h2><span class="header-section-number">22.8</span> Subscribirse al provedor</h2>
+<pre class="sourceCode java"><code class="sourceCode java">locationManager.<span class="fu">requestLocationUpdates</span>(
+  providerName, <span class="co">// nombre del provedor de localización</span>
+  timeInMillis, <span class="co">// tiempo mínimo, en milisegundos, entre actualizaciones</span>
+  distanceInMeters, <span class="co">// distancia mínima, en metros, entre actualizaciones</span>
+  <span class="kw">new</span> <span class="fu">LocalitationListener</span>(){
+
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onLocationChanged</span>(<span class="dt">final</span> Location location) {
+      <span class="fu">mostrarPosicion</span>(location); }
+
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onProviderDisabled</span>(<span class="dt">final</span> String providerName){
+      <span class="fu">mostrarAdvertenciaProviderDesactivado</span>(providerName); }
+
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onProviderEnabled</span>(<span class="dt">final</span> String providerName){
+      <span class="fu">mostrarAdvertenciaProviderActivado</span>(providerName); }
+
+    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onStatusChanged</span>(<span class="dt">final</span> String provider, <span class="dt">final</span> <span class="dt">int</span> status, <span class="dt">final</span> Bundle extras){
+      <span class="co">// status puede tomar los valores OUT_OF_SERVICE, TEMPORARILY_UNAVAILABLE, AVAILABLE</span>
+      <span class="fu">mostrarAdvertenciaProviderActivado</span>(providerName, status);
+    }
+  });</code></pre>
+</section><section id="borrar-la-subscripción-al-provedor" class="slide level2">
+<h2><span class="header-section-number">22.9</span> Borrar la subscripción al provedor</h2>
+<pre class="sourceCode java"><code class="sourceCode java">locationManager.<span class="fu">removeUpdates</span>(providerName);</code></pre>
+</section><section id="mostrar-la-localización" class="slide level2">
+<h2><span class="header-section-number">22.10</span> Mostrar la localización</h2>
+<ul>
+<li>La clase <strong>Location</strong> nos facilita, entre otros, los siguientes métodos:
+<ul>
+<li><strong>distanceTo(final Location dest)</strong>: devuelve la distancia en metros entre el punto que indica la propia Location y la pasada por parámetro.</li>
+<li><strong>getAccuracy()</strong>: devuelve la precisión en metros.</li>
+<li><strong>getAltitude()</strong>: devuelve la altitud en metros.</li>
+<li><strong>getBearing()</strong>: devuelve la dirección en grados Este desde el Norte verdadero.</li>
+<li><strong>getLatitude()</strong>: devuelve la latitud.</li>
+<li><strong>getLongitude()</strong>: devuelve la longitud.</li>
+<li><strong>getProvider()</strong>: nombre del provedor de localización.</li>
+<li><strong>getSpeed()</strong>: velocidad medida en metros por segundo.</li>
+</ul></li>
+</ul>
+</section><section id="localización-en-el-emulador-i" class="slide level2">
+<h2><span class="header-section-number">22.11</span> Localización en el emulador (I)</h2>
+<ul>
+<li>Se puede cambiar los datos de localización del emulador desde el <strong>DDMS</strong> en la vista <strong>Emulator Control</strong> dentro de <strong>Location Controls</strong>.</li>
+<li>Se puede cambiar, en sus pestañas correspondientes:
+<ul>
+<li>de forma <strong>Manual</strong>, modificando la longitud y la latitud en cajas de texto,</li>
+<li>de forma automática, cargando archivos de datos geográficos
+<ul>
+<li><strong>GMX</strong></li>
+<li><strong>KML</strong>.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="localización-en-el-emulador-ii" class="slide level2">
+<h2><span class="header-section-number">22.12</span> Localización en el emulador (II)</h2>
+<figure>
+<img src="../img/pantalla-location.png" alt="Localización en el emulador" /><figcaption>Localización en el emulador</figcaption>
+</figure>
+</section>
+<section id="mapas" class="titleslide slide level1"><h1><span class="header-section-number">23</span> Mapas</h1></section><section id="requisitos-previos" class="slide level2">
+<h2><span class="header-section-number">23.1</span> Requisitos previos</h2>
+<ul>
+<li>Instalar <strong>Google APIs</strong> .</li>
+<li>Crear un AVD que utilice este paquete como target.</li>
+<li>Crear proyecto que que utilice este paquete como target.</li>
+</ul>
+</section><section id="api-key" class="slide level2">
+<h2><span class="header-section-number">23.2</span> API Key</h2>
+<ul>
+<li>Para poder utilizar la API de Google Maps se requiere una <strong>API Key</strong>.</li>
+<li>Estará asociada al certificado con el que firmamos nuestra aplicación.</li>
+<li>Si cambiamos el certificado (publicación en el Market) habrá que cambiarla.</li>
+<li>Para instalar aplicaciones en el emulador, se usa certificado automático, aún así hay que solicitar una clave asociada.</li>
+</ul>
+</section><section id="solicitar-clave" class="slide level2">
+<h2><span class="header-section-number">23.3</span> Solicitar clave</h2>
+<ul>
+<li><strong>Eclipse &gt; Windows &gt; Prefecences &gt; Android &gt; Build</strong>
+<ul>
+<li>copiar la ruta de <strong>Default Debug Keystore</strong></li>
+</ul></li>
+<li>Ejecutar comando (tanto Windows como Linux):</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;path-jre&gt;</span>/bin/keytool -list
+  -alias     androiddebugkey
+  -keystore  &quot;<span class="kw">&lt;path-default-debug-keystore&gt;</span>&quot;
+  -storepass android
+  -keypass   android</code></pre>
+<ul>
+<li>Obtenemos <strong>Huella digital de certificado (MD5)</strong>
+<ul>
+<li>Introducirla en <a href="http://www.europapress.es/rss/rss.aspx">http://code.google.com/android/maps-api-signup.html</a></li>
+</ul></li>
+</ul>
+</section><section id="mapview" class="slide level2">
+<h2><span class="header-section-number">23.4</span> MapView</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;LinearLayout</span>
+<span class="ot">  xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  android:orientation=</span><span class="st">&quot;vertical&quot;</span>
+<span class="ot">  android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">  android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;com.google.android.maps.MapView</span>
+<span class="ot">    android:id=</span><span class="st">&quot;@+id/mapa&quot;</span>
+<span class="ot">    android:layout_width=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">    android:layout_height=</span><span class="st">&quot;fill_parent&quot;</span>
+<span class="ot">    android:apiKey=</span><span class="st">&quot;ClAv3-0Bt3n1Da-3n-3L-pUnT0-aNt3rI0r&quot;</span>
+<span class="ot">    android:clickable=</span><span class="st">&quot;true&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/LinearLayout&gt;</span></code></pre>
+</section><section id="mapactivity" class="slide level2">
+<h2><span class="header-section-number">23.5</span> MapActivity</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> MapasActivity <span class="kw">extends</span> MapActivity {
+
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">onCreate</span>(Bundle savedInstanceState) {
+    ...
+    <span class="co">// Obtenemos una referencia al control MapView</span>
+    <span class="dt">final</span> MapView mapa = (MapView) <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">mapa</span>);
+    ...
+    <span class="co">// Añadimos la capa de marcadores (ver después)</span>
+    mapa.<span class="fu">getOverlays</span>().<span class="fu">add</span>(<span class="kw">new</span> <span class="fu">OverlayMapa</span>());
+    mapa.<span class="fu">postInvalidate</span>();
+    ...
+  }
+
+  <span class="kw">protected</span> <span class="dt">boolean</span> <span class="fu">isRouteDisplayed</span>() { <span class="kw">return</span> <span class="kw">false</span>; }
+
+  <span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">onTap</span>(GeoPoint point, MapView mapView) {
+
+    <span class="dt">final</span> String textoToast = <span class="st">&quot;Lat: &quot;</span> + point.<span class="fu">getLatitudeE6</span>()/<span class="fl">1E6</span>
+      + <span class="st">&quot; - &quot;</span> + <span class="st">&quot;Lon: &quot;</span> + point.<span class="fu">getLongitudeE6</span>()/<span class="fl">1E6</span>;
+    Toast.<span class="fu">makeText</span>(mapView.<span class="fu">getContext</span>(), textoToast, Toast.<span class="fu">LENGTH_SHORT</span>).<span class="fu">show</span>();
+    <span class="kw">return</span> <span class="kw">true</span>;
+  }
+}</code></pre>
+</section><section id="androidmanifest.xml." class="slide level2">
+<h2><span class="header-section-number">23.6</span> AndroidManifest.xml.</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;utf-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;manifest</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="ot">  package=</span><span class="st">&quot;net.sgoliver.android&quot;</span><span class="ot"> android:versionCode=</span><span class="st">&quot;1&quot;</span><span class="ot"> android:versionName=</span><span class="st">&quot;1.0&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;application</span><span class="ot"> android:icon=</span><span class="st">&quot;@drawable/icon&quot;</span><span class="ot"> android:label=</span><span class="st">&quot;@string/app_name&quot;</span><span class="kw">&gt;</span>
+
+    <span class="kw">&lt;uses-library</span><span class="ot"> android:name=</span><span class="st">&quot;com.google.android.maps&quot;</span> <span class="kw">/&gt;</span>
+
+    <span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.AndroidMapas&quot;</span><span class="ot"> android:label=</span><span class="st">&quot;@string/app_name&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;intent-filter&gt;</span>
+        <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.action.MAIN&quot;</span> <span class="kw">/&gt;</span>
+        <span class="kw">&lt;category</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.category.LAUNCHER&quot;</span> <span class="kw">/&gt;</span>
+      <span class="kw">&lt;/intent-filter&gt;</span>
+    <span class="kw">&lt;/activity&gt;</span>
+
+  <span class="kw">&lt;/application&gt;</span>
+
+  <span class="kw">&lt;uses-permission</span><span class="ot"> android:name=</span><span class="st">&quot;android.permission.INTERNET&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/manifest&gt;</span></code></pre>
+</section><section id="métodos-de-la-clase-mapview" class="slide level2">
+<h2><span class="header-section-number">23.7</span> Métodos de la clase MapView</h2>
+<ul>
+<li>Disponemos de los siguientes métodos
+<ul>
+<li><strong>setBuiltInZoomControls(boolean)</strong>: muestra los controles de zoom.</li>
+<li><strong>setSatellite(boolean)</strong>: muestra la vista tipo satelite.</li>
+<li><strong>setStreetView(boolean)</strong>: muestra la vita tipo StreetView.</li>
+<li><strong>getMapCenter()</strong>: retorna el GeoPoint central.</li>
+<li><strong>setCenter(GeoPoint)</strong>: establece el centro del mapa.</li>
+<li><strong>animateTo(GeoPoint)</strong>: mueve el mapa hasta el munto indicado.</li>
+<li><strong>getZoomLevel()</strong>: nivel de zoom (1 menos de talle - 21 más detalle)</li>
+<li><strong>setZomm()</strong>: establece un nivel de zoom.</li>
+<li><strong>zoomIn()</strong>: aumenta el zoom.</li>
+<li><strong>zoomOut()</strong>: disminuye el zoom.</li>
+<li><strong>scrollBy(numPixelHorizontal, numPixelVertical)</strong>: desplaza el mapa.</li>
+<li><strong>getProjection()</strong>: retorna un objeto de tipo Projection.</li>
+</ul></li>
+</ul>
+</section><section id="la-clase-projection" class="slide level2">
+<h2><span class="header-section-number">23.8</span> La clase Projection</h2>
+<ul>
+<li>La clase MapView retorna un objeto de tipo <strong>Projection</strong>, que tendrá en cuenta la posición central del mapa y su nivel de zoom.</li>
+<li>La clase Projection es capaz de convertir coordenadas expresadas en grados en píxeles.</li>
+</ul>
+</section><section id="capas" class="slide level2">
+<h2><span class="header-section-number">23.9</span> Capas</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> OverlayMapa <span class="kw">extends</span> Overlay {
+
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">draw</span>(Canvas canvas, MapView mapView, <span class="dt">boolean</span> shadow) {
+
+    Point centro = <span class="kw">new</span> Point();
+    mapView.<span class="fu">getProjection</span>().<span class="fu">toPixels</span>(mapView.<span class="fu">getMapCenter</span>(), centro);
+
+    <span class="co">// Definimos el pincel de dibujo</span>
+    Paint paint = <span class="kw">new</span> Paint();
+    paint.<span class="fu">setColor</span>(Color.<span class="fu">BLUE</span>);
+
+    <span class="co">// Marca Ejemplo 1: Círculo y Texto</span>
+    canvas.<span class="fu">drawCircle</span>(centro.<span class="fu">x</span>, centro.<span class="fu">y</span>, <span class="dv">5</span>, paint);
+    canvas.<span class="fu">drawText</span>(<span class="st">&quot;Texto&quot;</span>, centro.<span class="fu">x</span><span class="dv">+10</span>, centro.<span class="fu">y</span><span class="dv">+5</span>, paint);
+
+    <span class="co">// Marca Ejemplo 2: Bitmap</span>
+    Bitmap bitMap = BitmapFactory.<span class="fu">decodeResource</span>(mapView.<span class="fu">getResources</span>(), R.<span class="fu">drawable</span>.<span class="fu">marcador_google_maps</span>);
+    canvas.<span class="fu">drawBitmap</span>(bm, centro.<span class="fu">x</span> - bitMap.<span class="fu">getWidth</span>(), centro.<span class="fu">y</span> - bitMap.<span class="fu">getHeight</span>(), paint);
+  }
+}</code></pre>
+</section>
+
+<!--footer id="footer">
+  <h4 class="author"> Adolfo Sanz De Diego  - Junio 2011 - Actualizado Julio 2012</h4>
+</footer-->
+
+<!-- deck goto extension html -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck navigation extension html -->
+<div aria-role="navigation">
+  <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+  <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+</div>
+
+<!-- deck status extension html -->
+<p class="deck-status" aria-role="status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+</p>
+
+<!-- jquery  -->
+<script src="../lib/deck.js-master/jquery.min.js"></script>
+
+<!-- deck core js  -->
+<script src="../lib/deck.js-master/core/deck.core.js"></script>
+
+<!-- deck extension js -->
+<script src="../lib/deck.js-master/extensions/goto/deck.goto.js"></script>
+<script src="../lib/deck.js-master/extensions/menu/deck.menu.js"></script>
+<script src="../lib/deck.js-master/extensions/navigation/deck.navigation.js"></script>
+<script src="../lib/deck.js-master/extensions/scale/deck.scale.js"></script>
+<script src="../lib/deck.js-master/extensions/status/deck.status.js"></script>
+<!--script src="../lib/deck.search.js-master/search/deck.search.js"></script-->
+
+<!-- Initialize the deck. -->
+<script>
+$(function() {
+    $.deck('.slide');
+});
+</script>
+
+</body>
+</html>
